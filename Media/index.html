@@ -18,68 +18,70 @@ $(document).ready(function() {
 </head>
 
 <body onLoad="goforit()">
-<div id="line-top">
-<div id="center-line-top">
-<div style="padding:5px;">
+<header>
+	<div id="line-top">
+	<div id="center-line-top">
+	<div style="padding:5px;">
 
-<div style="float:left; width:145px;">
-<strong>Последни : </strong>
-</div>
-
-<div id="hot-news">
-	<ul id="js-news" class="js-hidden">
-		<li> Изнася ви България оръжия за Сирия</li>
-		<li>Бойко Борисов поискал помощ от Ангела Меркел за охраната на границата</li>
-		<li>Защитата: Обвинението за тероризъм срещу тримата сирийци е плод на натиск</li>
-		<li>Безкомпромисен Григор Димитров се класира за четвъртфинал в Торонто</li>
-	</ul>
-</div>
-
-</div>
-</div>
-</div>
-
-<div class="cleaner_h30"></div>
-<div id="line-header">
-<div id="center-header">
-<div id="left-center-header">
-	<img id="logo"src="images/logo.png" />
-</div>
-<div id="right-center-header">
-	<div id="menu-right-center-header">
-	<a href="#">Контакти</a> | <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Aasdkjhsa</a> 
+	<div style="float:left; width:145px;">
+	<strong>Последни : </strong>
 	</div>
-	<div id="w2b-searchbox">
-	<form id="w2b-searchform" action="pencarian" method="POST">
-	<input type="text" id="s" name="key" value="Search..." onfocus='if (this.value == "Search...") {this.value = ""}' onblur='if (this.value == "") {this.value = "Search...";}'/>
-	<input type="image" src="images/blank.gif" id="sbutton" />
-	</form>
+
+	<div id="hot-news">
+		<ul id="js-news" class="js-hidden">
+			<li> Изнася ви България оръжия за Сирия</li>
+			<li>Бойко Борисов поискал помощ от Ангела Меркел за охраната на границата</li>
+			<li>Защитата: Обвинението за тероризъм срещу тримата сирийци е плод на натиск</li>
+			<li>Безкомпромисен Григор Димитров се класира за четвъртфинал в Торонто</li>
+		</ul>
 	</div>
-	<div class="cleaner_h0"></div>
-	<div id="date-right-center-header">
-	Добре дошли посетители | <script src="js/clock.js" type="text/javascript"></script><span id="clock"></span>
+
 	</div>
-</div>
-</div>
-<div id="line-menu">
-<div id="center-menu">
-	<ul>
-		<li><a href="index.html">Plovdiv News</a></li>
-		<li><a href="#">България</a></li>
-		<li><a href="#">Светът</a></li>
-		<li><a href="#">Коментар</a></li>
-		<li><a href="#">Лайфстайл</a></li>
-		<li><a href="#">Спорт</a></li>
-		<li><a href="#">Моята Новина</a></li>
-		<li><a href="#">Камерите</a></li>
-		<li><a href="#">Галирия</a></li>
-		<li><a href="#">Емисии</a></li>
-		<li><a href="#">Най-четени</a></li>
-		<li><a href="#">Евро 2016</a></li>
-	</ul>
-	<div class="cleaner_h0"></div>
-</div>
-</div>
+	</div>
+	</div>
+
+	<div class="cleaner_h30"></div>
+	<div id="line-header">
+	<div id="center-header">
+	<div id="left-center-header">
+		<img id="logo"src="images/logo.png" />
+	</div>
+	<div id="right-center-header">
+		<div id="menu-right-center-header">
+		<a href="#">Контакти</a> | <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Aasdkjhsa</a> 
+		</div>
+		<div id="w2b-searchbox">
+		<form id="w2b-searchform" action="pencarian" method="POST">
+		<input type="text" id="s" name="key" value="Search..." onfocus='if (this.value == "Search...") {this.value = ""}' onblur='if (this.value == "") {this.value = "Search...";}'/>
+		<input type="image" src="images/blank.gif" id="sbutton" />
+		</form>
+		</div>
+		<div class="cleaner_h0"></div>
+		<div id="date-right-center-header">
+		Добре дошли посетители | <script src="js/clock.js" type="text/javascript"></script><span id="clock"></span>
+		</div>
+	</div>
+	</div>
+	<div id="line-menu">
+	<div id="center-menu">
+		<ul>
+			<li><a href="index.html">Plovdiv News</a></li>
+			<li><a href="#">България</a></li>
+			<li><a href="#">Светът</a></li>
+			<li><a href="#">Коментар</a></li>
+			<li><a href="#">Лайфстайл</a></li>
+			<li><a href="#">Спорт</a></li>
+			<li><a href="#">Моята Новина</a></li>
+			<li><a href="#">Камерите</a></li>
+			<li><a href="#">Галирия</a></li>
+			<li><a href="#">Емисии</a></li>
+			<li><a href="#">Най-четени</a></li>
+			<li><a href="#">Евро 2016</a></li>
+		</ul>
+		<div class="cleaner_h0"></div>
+	</div>
+	</div>
+</header>	
 <div id="content">
 	<div id="center-content">
 	<div id="left-center-content">
@@ -102,43 +104,43 @@ $("#"+content_show).slideDown();
 <div class="tabbed_box">
 <div class="tabbed_area">
 <ul class="tabs">
-<li><a href="javascript:void(0);" title="content_1" class="tab active">Последни</a></li>
-<li><a href="javascript:void(0);" title="content_2" class="tab">Популярни</a></li>
-<li><a href="javascript:void(0);" title="content_3" class="tab">Коментари</a></li>
+	<li><a href="javascript:void(0);" title="content_1" class="tab active">Последни</a></li>
+	<li><a href="javascript:void(0);" title="content_2" class="tab">Популярни</a></li>
+	<li><a href="javascript:void(0);" title="content_3" class="tab">Коментари</a></li>
 </ul>
 <div id="content_1" class="content">
 <ul>
-<li><a href="#">Безкомпромисен Григор Димитров се класира за четвъртфинал в Торонто</a></li>
-<li><a href="#">Тир с плочки се обърна близо до Разград (СНИМКИ)</a></li>
-<li><a href="#">Интелектуалци зоват Красимир Каракачанов да се кандидатира за президент</a></li>
-<li><a href="#">Уикилийкс” публикува гласови съобщения от комитета на Демократическата партия в САЩ</a></li>
-<li><a href="#">Пожар бушува на границата с Турция</a></li>
-<li><a href="#">Доброволци събират пари за спасяването на българския "Стоунхендж"</a></li>
-<li><a href="#">Доброволци събират средства за българския „Стоунхендж”</a></li>
-<li><a href="#">Доброволци събират средства за българския „Стоунхендж”</a></li>
-<li><a href="#">Интернет предизвикателство помогна за научно откритие</a></li>
-<li><a href="#">Близо 150 хил. долара за всеки наш медалист в Рио</a></li>
+	<li><a href="#">Безкомпромисен Григор Димитров се класира за четвъртфинал в Торонто</a></li>
+	<li><a href="#">Тир с плочки се обърна близо до Разград (СНИМКИ)</a></li>
+	<li><a href="#">Интелектуалци зоват Красимир Каракачанов да се кандидатира за президент</a></li>
+	<li><a href="#">Уикилийкс” публикува гласови съобщения от комитета на Демократическата партия в САЩ</a></li>
+	<li><a href="#">Пожар бушува на границата с Турция</a></li>
+	<li><a href="#">Доброволци събират пари за спасяването на българския "Стоунхендж"</a></li>
+	<li><a href="#">Доброволци събират средства за българския „Стоунхендж”</a></li>
+	<li><a href="#">Доброволци събират средства за българския „Стоунхендж”</a></li>
+	<li><a href="#">Интернет предизвикателство помогна за научно откритие</a></li>
+	<li><a href="#">Близо 150 хил. долара за всеки наш медалист в Рио</a></li>
 </ul>
 </div>
 <div id="content_2" class="content">
 <ul>
-<li><a href="#">Безкомпромисен Григор Димитров се класира за четвъртфинал в Торонто</a></li>
-<li><a href="#">Тир с плочки се обърна близо до Разград (СНИМКИ)</a></li>
-<li><a href="#">Интелектуалци зоват Красимир Каракачанов да се кандидатира за президент</a></li>
-<li><a href="#">Уикилийкс” публикува гласови съобщения от комитета на Демократическата партия в САЩ</a></li>
-<li><a href="#">Пожар бушува на границата с Турция</a></li>
+	<li><a href="#">Безкомпромисен Григор Димитров се класира за четвъртфинал в Торонто</a></li>
+	<li><a href="#">Тир с плочки се обърна близо до Разград (СНИМКИ)</a></li>
+	<li><a href="#">Интелектуалци зоват Красимир Каракачанов да се кандидатира за президент</a></li>
+	<li><a href="#">Уикилийкс” публикува гласови съобщения от комитета на Демократическата партия в САЩ</a></li>
+	<li><a href="#">Пожар бушува на границата с Турция</a></li>
 </ul>
 </div>
 <div id="content_3" class="content">
 <ul>
-<li><a href="#">Тир с плочки се обърна близо до Разград (СНИМКИ)</a></li>
-<li><a href="#">Интелектуалци зоват Красимир Каракачанов да се кандидатира за президент</a></li>
-<li><a href="#">Уикилийкс” публикува гласови съобщения от комитета на Демократическата партия в САЩ</a></li>
-<li><a href="#">Пожар бушува на границата с Турция</a></li>
-<li><a href="#">Доброволци събират пари за спасяването на българския "Стоунхендж"</a></li>
-<li><a href="#">Доброволци събират средства за българския „Стоунхендж”</a></li>
-<li><a href="#">Доброволци събират средства за българския „Стоунхендж”</a></li>
-<li><a href="#">Интернет предизвикателство помогна за научно откритие</a></li>
+	<li><a href="#">Тир с плочки се обърна близо до Разград (СНИМКИ)</a></li>
+	<li><a href="#">Интелектуалци зоват Красимир Каракачанов да се кандидатира за президент</a></li>
+	<li><a href="#">Уикилийкс” публикува гласови съобщения от комитета на Демократическата партия в САЩ</a></li>
+	<li><a href="#">Пожар бушува на границата с Турция</a></li>
+	<li><a href="#">Доброволци събират пари за спасяването на българския "Стоунхендж"</a></li>
+	<li><a href="#">Доброволци събират средства за българския „Стоунхендж”</a></li>
+	<li><a href="#">Доброволци събират средства за българския „Стоунхендж”</a></li>
+	<li><a href="#">Интернет предизвикателство помогна за научно откритие</a></li>
 </ul>
 </div>
 </div>
@@ -193,11 +195,11 @@ $("#"+content_show).slideDown();
 <strong>Как може да се спре паленето на стърнища?</strong>
 <div class="cleaner_h5"></div>
 <form method="post" action="">
-<input type="radio" name="isi" /> С по-сериозни глоби за нарушителите<div class="cleaner_h5"></div>
-<input type="radio" name="isi" />С информационни кампании на пожарната<div class="cleaner_h5"></div>
-<input type="radio" name="isi" /> С изпращане на повече огнеборци по селата<div class="cleaner_h5"></div>
-<input type="radio" name="isi" /> Друго (посочете в коментарите)<div class="cleaner_h5"></div>
-<input id="img-vote"type="image" src="images/vote.png" /> <input id="img-results"type="image" src="images/results.png" />
+	<input type="radio" name="isi" /> С по-сериозни глоби за нарушителите<div class="cleaner_h5"></div>
+	<input type="radio" name="isi" />С информационни кампании на пожарната<div class="cleaner_h5"></div>
+	<input type="radio" name="isi" /> С изпращане на повече огнеборци по селата<div class="cleaner_h5"></div>
+	<input type="radio" name="isi" /> Друго (посочете в коментарите)<div class="cleaner_h5"></div>
+	<input id="img-vote"type="image" src="images/vote.png" /> <input id="img-results"type="image" src="images/results.png" />
 </form>
 </div>
 </div>
@@ -390,25 +392,24 @@ $("#"+content_show).slideDown();
 
 
 <div class="cleaner_h5"></div>
-	<!--<img class="img-add-center"src="images/iklan-center-top.png" />-->
-<!--<div class="cleaner_h40"></div>-->
 	
 	</div>
 <div class="cleaner_h0"></div>
 	
 	</div>
 </div>
+<footer>
+	<div id="footer-menu">
+	<div id="center-footer-menu"><a href="#">Контакти </a>| <a href="#">Facebook</a> | <a href="#">Twitter</a> <a href="#">Коментар</a> | <a href="#">Aasdhjdak</a></div>
+	</div>
 
-<div id="footer-menu">
-<div id="center-footer-menu"><a href="#">Контакти </a>| <a href="#">Facebook</a> | <a href="#">Twitter</a> <a href="#">Коментар</a> | <a href="#">Aasdhjdak</a></div>
-</div>
-
-<div id="footer">
-<div id="center-footer">
-Copyright © 2016 IMG Academy Plovdiv.<br />
-Uchastnici,...,........,...... Tel.-62 333 420600. Fax.-62 333 414890<br />
-You come here with the IP Address 180.247.235.203<br />
-</div>
-</div>
+	<div id="footer">
+	<div id="center-footer">
+	Copyright © 2016 IMG Academy Plovdiv.<br />
+	Uchastnici,...,........,...... Tel.-62 333 420600. Fax.-62 333 414890<br />
+	You come here with the IP Address 180.247.235.203<br />
+	</div>
+	</div>
+</footer>
 </body>
 </html>
