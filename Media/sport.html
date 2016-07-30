@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Plovdiv News - Sport</title>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script> 
+<script language="javascript" src="js/jquery.ticker.js"></script>
+<script language="javascript" src="js/site.js"></script>
+<script src="js/s3Slider.js" type="text/javascript"></script>
+<link href="css/sport.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body onLoad="goforit()">
+<header>
+	<div id="line-top">
+	<div id="center-line-top">
+	<div style="padding:5px;">
+
+	<div style="float:left; width:145px;">
+	<strong>Последни : </strong>
+	</div>
+
+	<div id="hot-news">
+		<ul id="js-news" class="js-hidden">
+			<li> Изнася ви България оръжия за Сирия</li>
+			<li>Бойко Борисов поискал помощ от Ангела Меркел за охраната на границата</li>
+			<li>Защитата: Обвинението за тероризъм срещу тримата сирийци е плод на натиск</li>
+			<li>Безкомпромисен Григор Димитров се класира за четвъртфинал в Торонто</li>
+		</ul>
+	</div>
+
+	</div>
+	</div>
+	</div>
+
+	<div class="cleaner_h30"></div>
+	<div id="line-header">
+	<div id="center-header">
+	<div id="left-center-header">
+		<img id="logo"src="images/sport-page/sport-logo.png" />
+	</div>
+	<div id="right-center-header">
+		<div id="menu-right-center-header">
+		<a href="#">Контакти</a> | <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Aasdkjhsa</a> 
+		</div>
+		<div id="w2b-searchbox">
+		<form id="w2b-searchform" action="pencarian" method="POST">
+		<input type="text" id="s" name="key" value="Search..." onfocus='if (this.value == "Search...") {this.value = ""}' onblur='if (this.value == "") {this.value = "Search...";}'/>
+		<input type="image" src="images/blank.gif" id="sbutton" />
+		</form>
+		</div>
+		<div class="cleaner_h0"></div>
+		<div id="date-right-center-header">
+		Добре дошли посетители | <script src="js/clock.js" type="text/javascript"></script><span id="clock"></span>
+		</div>
+	</div>
+	</div>
+	<div id="line-menu">
+	<div id="center-menu">
+		<ul>
+			<li><a href="index.html">Plovdiv News</a></li>
+			<li><a href="#">България</a></li>
+			<li><a href="#">Светът</a></li>
+			<li><a href="#">Коментар</a></li>
+			<li><a href="#">Лайфстайл</a></li>
+			<li><a href="#">Спорт</a></li>
+			<li><a href="#">Моята Новина</a></li>
+			<li><a href="#">Камерите</a></li>
+			<li><a href="#">Галирия</a></li>
+			<li><a href="#">Емисии</a></li>
+			<li><a href="#">Най-четени</a></li>
+			<li><a href="#">Евро 2016</a></li>
+		</ul>
+		<div class="cleaner_h0"></div>
+	</div>
+	</div>
+</header>
+<div id="wrapper">
+		<div class="news-box">
+			<article class="post">
+				<div class="post-box">
+					<div class="img">
+						<img src="images/sport-page/football-1.jpg">
+					</div>
+					<h2>
+						Тук ще бъде заглавието на новината !
+					</h2>
+					<div class="post-text">
+						<p>
+							Тук ще бъде описанието на новината!	
+						</p>
+					</div>
+				</div>
+			</article>
+			<article class="post">
+				<div class="post-box">
+					<div class="img">
+						<img src="images/sport-page/football-1.jpg">
+					</div>
+					<h2>
+						Тук ще бъде заглавието на новината !
+					</h2>
+					<div class="post-text">
+						<p>
+							Тук ще бъде описанието на новината!	
+						</p>
+					</div>
+				</div>
+			</article>
+		</div>
+		<div id="down">
+			<div class="small-news-box">
+				<article class="top-img">
+					<a href="#"><img src="images/sport-page/rooney.jpg"></a>
+					<a href="#"><img src="images/sport-page/rooney.jpg"></a>
+					<a href="#"><img src="images/sport-page/rooney.jpg"></a>
+					<a href="#"><img src="images/sport-page/rooney.jpg"></a>
+				</article>
+				<div class="clear"></div>
+				<article class="down-img">
+					<a href="#"><img src="images/sport-page/downhill.jpg"></a>
+					<div class="down-img-info"><p>Съзтезанието по Downhill<p></div>
+				</article>
+			</div>
+			<div class="right-news-box">
+				<article class="top-img-right">
+					<a href="#"><img src="images/sport-page/f1.jpg"></a>
+					<div class="right-img-info"><p>Съзтезанието F1<p></div>
+				</article>
+			</div>
+		</div>
+		<div class="news-box-block">
+			<article>
+				<a href="#"><img src="images/sport-page/motogp.jpg">
+				<h5>Последни новини от Moto-GP</h5></a>
+			</article>
+			<article>
+				<a href="#"><img src="images/sport-page/motogp.jpg">
+				<h5>Последни новини от Moto-GP</h5></a>
+			</article>
+		</div>
+		<div class="news-box-block">
+			<article>
+				<a href="#"><img src="images/sport-page/motogp.jpg">
+				<h5>Последни новини от Moto-GP</h5></a>
+			</article>
+			<article>
+				<a href="#"><img src="images/sport-page/motogp.jpg">
+				<h5>Последни новини от Moto-GP</h5></a>
+			</article>
+		</div>
+		<div class="news-box-sport">
+			<article>
+				<div class="top-img-info"><p>Тенис<p></div>
+				<img src="images/sport-page/tenis.jpg">
+				<a href="#">Новини за тенис Новини за тенис Новини за тенис </a>
+				<a href="#">Новини за тенис Новини за тенис Новини за тенис </a>
+				<a href="#">Новини за тенис Новини за тенис Новини за тенис </a>
+			</article>
+			<article>
+				<div class="top-img-info"><p>Волейбол<p></div>
+				<img src="images/sport-page/volleyball.jpg">
+				<a href="#">Новини за тенис Новини за тенис Новини за тенис </a>
+				<a href="#">Новини за тенис Новини за тенис Новини за тенис </a>
+				<a href="#">Новини за тенис Новини за тенис Новини за тенис </a>
+			</article>
+			<article>
+				<div class="top-img-info"><p>Голф<p></div>
+				<img src="images/sport-page/golf.jpg">
+				<a href="#">Новини за тенис Новини за тенис Новини за тенис </a>
+				<a href="#">Новини за тенис Новини за тенис Новини за тенис </a>
+				<a href="#">Новини за тенис Новини за тенис Новини за тенис </a>
+			</article>
+		</div>	
+		<div id="adds">
+			<img src="images/sport-page/add.png">
+		</div>
+		<div class="news-box-sport">
+			<article>
+				<div class="top-img-info"><p>MMA<p></div>
+				<img src="images/sport-page/mma.jpg">
+				<a href="#">Новини за тенис Новини за тенис Новини за тенис </a>
+				<a href="#">Новини за тенис Новини за тенис Новини за тенис </a>
+				<a href="#">Новини за тенис Новини за тенис Новини за тенис </a>
+			</article>
+			<article>
+				<div class="top-img-info"><p>Хокей<p></div>
+				<img src="images/sport-page/hockey.jpg">
+				<a href="#">Новини за тенис Новини за тенис Новини за тенис </a>
+				<a href="#">Новини за тенис Новини за тенис Новини за тенис </a>
+				<a href="#">Новини за тенис Новини за тенис Новини за тенис </a>
+			</article>
+			<article>
+				<div class="top-img-info"><p>Баскетбол<p></div>
+				<img src="images/sport-page/basketball.jpg">
+				<a href="#">Новини за тенис Новини за тенис Новини за тенис </a>
+				<a href="#">Новини за тенис Новини за тенис Новини за тенис </a>
+				<a href="#">Новини за тенис Новини за тенис Новини за тенис </a>
+			</article>
+		</div>
+		<div id="big-news-down">
+			<img src="images/sport-page/mino.jpg">
+			<div class="big-info"><h2>Мино Райола: Погба все още не е играч на Юнайтед!</h2></div>
+		</div>
+		<div id="most-read">
+				<h5>Най-четените новини</h5>
+				<div class="most-read-news">
+					<img src="images/sport-page/most-read-news-img.jpg">
+					<span>Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст </span>
+				</div>
+				<div class="clear"></div>
+				<div class="most-read-news">
+					<img src="images/sport-page/most-read-news-img.jpg">
+					<span>Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст </span>
+				</div>
+				<div class="clear"></div>
+				<div class="most-read-news">
+					<img src="images/sport-page/most-read-news-img.jpg">
+					<span>Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст </span>
+				</div>
+				<div class="clear"></div>
+				<div class="most-read-news">
+					<img src="images/sport-page/most-read-news-img.jpg">
+					<span>Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст </span>
+				</div>
+				<div class="clear"></div>
+				<div class="most-read-news">
+					<img src="images/sport-page/most-read-news-img.jpg">
+					<span>Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст </span>
+				</div>
+				<div class="clear"></div>
+				<div class="most-read-news">
+					<img src="images/sport-page/most-read-news-img.jpg">
+					<span>Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст </span>
+				</div>
+				<div class="clear"></div>
+				<div class="most-read-news">
+					<img src="images/sport-page/most-read-news-img.jpg">
+					<span>Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст </span>
+				</div>
+				<div class="clear"></div>
+
+
+			</div>
+			<div id="soc-but">
+				<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+				<a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+				<a class="a2a_button_facebook"></a>
+				<a class="a2a_button_twitter"></a>
+				<a class="a2a_button_google_plus"></a>
+				<a class="a2a_button_pinterest"></a>
+				<a class="a2a_button_linkedin"></a>
+				</div>
+				<script async src="https://static.addtoany.com/menu/page.js"></script>
+			</div>
+		
+</div>
+<footer>
+	<div id="footer-menu">
+	<div id="center-footer-menu"><a href="#">Контакти </a>| <a href="#">Facebook</a> | <a href="#">Twitter</a> <a href="#">Коментар</a> | <a href="#">Aasdhjdak</a></div>
+	</div>
+
+	<div id="footer">
+	<div id="center-footer">
+	Copyright © 2016 IMG Academy Plovdiv.<br />
+	Uchastnici,...,........,...... Tel.-62 333 420600. Fax.-62 333 414890<br />
+	You come here with the IP Address 180.247.235.203<br />
+	</div>
+	</div>
+</footer>
