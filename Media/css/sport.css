@@ -16,10 +16,12 @@ color:#333333;
 
 a:link {
 	color: #000;
+	text-decoration: none;
 }
 
 a:hover {
 	color: blue;
+	text-decoration: none;
 }
 
 
@@ -387,7 +389,8 @@ margin:0px auto;
 
 #wrapper {
 	width: 75%;
-	height: 200em;
+	margin-top: 9px;
+	height: 250em;
 	background: #eee;
 	margin: 0 auto;
 }
@@ -417,6 +420,7 @@ margin:0px auto;
 
 .img img {
 	width: 100%;
+	min-height: 330px;
 }
 
 .small-news-box {
@@ -434,6 +438,7 @@ margin:0px auto;
 
 .top-img img {
 	width: 22%;
+	min-height: 75px;
 	float: left;
 	padding-left: 5px;
 }
@@ -562,9 +567,12 @@ margin:0px auto;
 }
 
 .big-info {
-	background: #CCC;
-    height: 100px;
-    margin-left: 16px;
+    background: rgba(16, 16, 16, 0.5);
+    position: relative;
+    bottom: 99px;
+    width: 95%;
+    left: 24px;
+    color: #FFF;
 }
 
 .big-info h2 {
@@ -607,3 +615,29 @@ margin:0px auto;
 	float: right;
     width: 58%;
 }
+
+.description {
+	position: relative;
+    bottom: 46px;
+    width: 92%;
+    height: 46px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #FFF;
+    margin: -43px;
+    left: 43px;
+    padding: 20px;
+    font-size: 15px;
+    /* display:none; */
+    text-overflow: ellipsis;
+}
+
+#big-down-widget {
+    float: right;
+    padding: 26px;
+}
+
+#video {
+	float: left;
+    margin-left: 20px;
+}
+
