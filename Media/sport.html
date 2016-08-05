@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <title>Plovdiv News - Sport</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script> 
 <script language="javascript" src="js/jquery.ticker.js"></script>
 <script language="javascript" src="js/site.js"></script>
@@ -57,24 +58,42 @@
 	</div>
 	</div>
 	<div id="line-menu">
-	<div id="center-menu">
-		<ul>
-			<li><a href="index.html">Plovdiv News</a></li>
-			<li><a href="#">България</a></li>
-			<li><a href="#">Светът</a></li>
-			<li><a href="#">Коментар</a></li>
-			<li><a href="#">Лайфстайл</a></li>
-			<li><a href="#">Спорт</a></li>
-			<li><a href="#">Моята Новина</a></li>
-			<li><a href="#">Камерите</a></li>
-			<li><a href="#">Галирия</a></li>
-			<li><a href="#">Емисии</a></li>
-			<li><a href="#">Най-четени</a></li>
-			<li><a href="#">Евро 2016</a></li>
-		</ul>
-		<div class="cleaner_h0"></div>
+		<div id="center-menu">
+			<ul>
+				<li><a href="index.html">Plovdiv News</a></li>
+				<li><a href="#">България</a></li>
+				<li><a href="#">Светът</a></li>
+				<li><a href="#">Коментар</a></li>
+				<li><a href="#">Лайфстайл</a></li>
+				<li><a href="#">Спорт</a></li>
+				<li><a href="#">Моята Новина</a></li>
+				<li><a href="#">Камерите</a></li>
+				<li><a href="#">Галирия</a></li>
+				<li><a href="#">Емисии</a></li>
+				<li><a href="#">Най-четени</a></li>
+				<li><a href="#">Евро 2016</a></li>
+			</ul>
+			<div class="cleaner_h0"></div>
+		</div>
+	
+			<div class="menu">
+				<li><a href="index.html">Plovdiv News</a></li>
+				<li><a href="#">България</a></li>
+				<li><a href="#">Светът</a></li>
+				<li><a href="#">Коментар</a></li>
+				<li><a href="#">Лайфстайл</a></li>
+				<li><a href="#">Спорт</a></li>
+				<li><a href="#">Моята Новина</a></li>
+				<li><a href="#">Камерите</a></li>
+				<li><a href="#">Галирия</a></li>
+				<li><a href="#">Емисии</a></li>
+				<li><a href="#">Най-четени</a></li>
+				<li><a href="#">Евро 2016</a></li>
+			</div>
+		
 	</div>
-	</div>
+	<button class="hamburger">&#9776;</button>
+  <button class="cross">&#735;</button>
 </header>
 <br>
 <br>
@@ -174,7 +193,7 @@
 				<a href="#">България с трета поредна загуба на световн... </a>
 				<a href="#">Капитанът Велизар Чернокожев: Полша е мног... </a>
 			</article>
-			<article>
+			<article class="top-art">
 				<div class="top-img-info"><p>Голф<p></div>
 				<img src="images/sport-page/golf.jpg">
 				<a href="#">Една ера е към своя край </a>
@@ -190,14 +209,14 @@
 				<a href="#">Теди Ринер от Франция вярва, че конкуренци...  </a>
 				<a href="#">Според треньорът по бокс Ricky Funez, Na... </a>
 			</article>
-			<article>
+			<article class="top-art-2">
 				<div class="top-img-info"><p>Хокей<p></div>
 				<img src="images/sport-page/hockey.jpg">
 				<a href="#">БЕЛАРУС: Купа на Беларус</a>
 				<a href="#">СВЯТ: Приятелски клубни срещи</a>
 				<a href="#">СВЯТ: Приятелски международни срещи</a>
 			</article>
-			<article>
+			<article> 
 				<div class="top-img-info"><p>Баскетбол<p></div>
 				<img src="images/sport-page/basketball.jpg">
 				<a href="#">Щатите доминират, удържаха съперник до ...</a>
@@ -262,6 +281,22 @@
     $(this).children(".description").show();
 }).mouseout(function() {
     $(this).children(".description").hide();
+});
+
+$( ".cross" ).hide();
+$( ".menu" ).hide();
+$( ".hamburger" ).click(function() {
+$( ".menu" ).slideToggle( "slow", function() {
+$( ".hamburger" ).hide();
+$( ".cross" ).show();
+});
+});
+
+$( ".cross" ).click(function() {
+$( ".menu" ).slideToggle( "slow", function() {
+$( ".cross" ).hide();
+$( ".hamburger" ).show();
+});
 });
 
 

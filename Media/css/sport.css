@@ -641,3 +641,273 @@ margin:0px auto;
     margin-left: 20px;
 }
 
+@media screen and (max-width: 1440px) and (min-width: 1040px) {
+	.hamburger {
+		display: none;
+	}
+}
+@media screen and (max-width: 1040px){
+	#wrapper {
+	height: 240em;
+	}
+
+	.hamburger{
+  background:none;
+  position:absolute;
+  top:146px;
+  right:0;
+  line-height:45px;
+  padding:0px 15px 0px 15px;
+  color:#0c0c0c;
+  border:0;
+  font-size:1.4em;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.cross{
+  background:none;
+  position:absolute;
+  top:146px;
+  right:0;
+  padding:0px 15px 0px 15px;
+  color:#0c0c0c;
+  border:0;
+  font-size:3em;
+  line-height:65px;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.menu{z-index:1000000; font-weight:bold; font-size:0.8em; width:100%; background:rgba(1, 116, 172, 0.95);  position:absolute; top: 188px; text-align:center;}
+.menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
+.menu li {display: block;   padding:15px 0 15px 0; border-bottom:#1d1f20 1px solid;}
+.menu li:hover{display: block;    background:#181818; padding:15px 0 15px 0; border-bottom:#e2a49a 1px solid;}
+.menu ul li a { text-decoration:none;  margin: 0px; color:#fff;}
+.menu ul li a:hover {  color: #fff; text-decoration:none;}
+.menu a{text-decoration:none; color:white;}
+.menu a:hover{text-decoration:none; color:white;}
+
+
+.glyphicon-home{
+  color:white; 
+  font-size:1.5em; 
+  margin-top:5px; 
+  margin:0 auto;
+}
+
+
+	#center-menu{
+		display: none;
+	}
+	
+	
+
+	.post {
+    width: 40%;
+    margin-left: 23px;
+	}
+
+	.news-box-block {
+    width: 43%;
+	}
+
+	.news-box-block article h5 {
+		font-size: 0.83em;
+	}
+
+	.img img {
+		min-height: 187px;
+		max-height: 187px;
+	}
+
+	.news-box-sport article {
+		width: 45%;
+	}
+
+	.top-art {
+		margin-right: 200px;
+	}
+
+	.top-art-2 {
+		margin-top: -300px;
+	}
+
+	#big-news-down {
+   	max-width: 100%;
+	}
+
+	#most-read {
+    width: 90%;
+	}
+
+	.most-read-news {
+	max-height: 73px;
+	}
+
+	.most-read-news img {
+    width: 30%;
+    max-height: 73px;
+	}
+
+	#big-down-widget {
+		display: none;
+	}
+
+	#video {
+		display: none;
+	}
+
+	.description {
+		display: none;
+		width: 86%;
+	}
+
+	.down-img img {
+    width: 93%;
+    padding-left: 0;
+	}
+
+	.down-img-info {
+    width: 93%;
+	}
+}
+
+@media screen and (max-width: 852px) {
+	#w2b-searchbox {
+		margin-left: -60px;
+	}
+
+	#right-center-header {
+    text-align: left;
+	}
+
+	#w2b-searchbox {
+		float: left;
+	}
+
+	#wrapper {
+    width: 100%;
+	}
+
+	.news-box-sport article {
+    width: 44%;
+	}
+
+	.small-news-box {
+    width: 100%;
+    margin-left: 0;
+	}
+
+	.top-img {
+    width: 100%;
+	}
+
+	.top-img img {
+    width: 25%;
+    padding-left: 0; 
+	}
+
+	.down-img img {
+    width: 100%;
+	}
+
+	.down-img-info {
+    width: 100%;
+	}
+
+	.right-news-box {
+    width: 100%;
+	}
+
+	.right-img-info {
+    width: 100%;
+	}
+
+	#most-read {
+	width: 100%;
+	height: 283px;
+	overflow: scroll;
+	padding: 0;
+	margin-left: 0;
+	}
+
+	#center-footer-menu {
+		width: 100%;
+
+	}
+}
+
+
+@media screen and (max-width: 619px) {
+	#wrapper {
+    height: 282em;
+	}
+
+	.post {
+		width: 100%;
+		margin-left: 0;
+		padding: 0;
+	}
+
+	.news-box-block {
+		width: 100%;
+		margin-left: 0;
+		margin: 0;
+	}
+
+	.news-box-block article h5 {
+    font-size: 1.83em;
+	}
+
+	#center-footer {
+		width: 100%;
+	}
+
+	#big-news-down img {
+    max-width: 100%;
+    padding: 0;
+	}
+
+	.big-info {
+	bottom: 83px;
+    width: 100%;
+    left: 0;
+	}
+}
+
+@media screen and (max-width: 547px) {
+	#wrapper {
+    height: 360em;
+	}
+
+	.news-box-block article {
+		width: 100%;
+	}
+
+	.news-box-block img {
+		max-width: 100%;
+	}
+
+	.news-box-block article h5 {
+		width: 100%;
+	}
+
+	.news-box-sport article {
+		width: 100%;
+		padding: 0;
+	}
+
+	.big-info {
+    bottom: 105px;
+	}
+}
+
+
+
+
+
+
+
