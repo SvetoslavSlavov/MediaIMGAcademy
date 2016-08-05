@@ -89,6 +89,12 @@
 		padding: 0;
 
 	}
+	/**********Footer************/
+	
+	#footer{
+		background: #0176AD;
+		background-image: none;
+	}
 	#center-footer-menu{
 		width: auto;
 	}
@@ -205,7 +211,7 @@
 @media screen and (max-width: 862px){
 	#center-menu{
 		margin-top:27px;
-	}
+
 }
 @media screen and (max-width: 242px){
 	#menu-right-center-header{
