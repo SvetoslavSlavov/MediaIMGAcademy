@@ -94,6 +94,11 @@
 		font-size: 1.5em;
 	}
 	#center-content{margin-top: 200px;}
+	#center-menu li{
+		padding: 0;
+		padding-top: 11px;
+		padding-bottom: 11px;
+	}
 	#center-menu ul li:hover{
 		background: orange;
 	}
