@@ -87,6 +87,10 @@ $(document).ready(function() {
 	</div>-->
 	<div id="center-menu">
 		<ul>
+			<li class="hamburger"onclick="myFunction();"><a href="#">☰ Меню</a></li>
+		</ul>
+		<ul id="nav"class="nav-hide">
+			
 			<li><a href="index.html">Plovdiv News</a></li>
 			<li><a href="#">България</a></li>
 			<li><a href="#">Светът</a></li>
@@ -99,6 +103,7 @@ $(document).ready(function() {
 			<li><a href="#">Емисии</a></li>
 			<li><a href="#">Най-четени</a></li>
 			<li><a href="#">Евро 2016</a></li>
+			
 			<!--<li class="icon">
 			    <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
 			</li>-->
@@ -106,7 +111,21 @@ $(document).ready(function() {
 		<div class="cleaner_h0"></div>
 	</div>
 
-</header>	
+</header>
+<script>
+	function myFunction(){
+		var x = document.getElementById("nav");
+		if (x.className === "nav-hide") {
+        x.className = "nav-show";
+        //document.getElementById("center-content").style.marginTop = "200px";
+	    } else {
+	        x.className = "nav-hide";
+	        //document.getElementById("center-content").style.marginTop = "547px";//
+	        	
+	    }
+	}
+</script>
+
 <div id="content">
 	<div id="center-content">
 	<div id="left-center-content">
