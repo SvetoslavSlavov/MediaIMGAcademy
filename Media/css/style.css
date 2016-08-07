@@ -377,6 +377,14 @@ padding:8px;
 margin:0px auto;
 }
 
+#center-footer a {
+	text-decoration: none;
+	color: #FFF;
+}
+
+#center-footer a:hover {
+	color: red;
+}
 
 /* DETAIL KATEGORI */
 
