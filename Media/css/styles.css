@@ -177,13 +177,25 @@ color:#0066FF;
     box-shadow: 6px 10px 9px #47476b;
 }
 
+#ladies-top-menu ul{
+	text-align: center;
+}
+
 #ladies-top-menu ul li{
 	display: inline-block;
 }
 
 #ladies-top-menu ul li{
-	padding: 10px 71px 10px 71px;
+	padding: 10px 50px 10px 50px;
 	border-left: 1px solid #fff;
+}
+
+#ladies-top-menu ul li:first-child{
+	margin-left: 15px;
+}
+
+#ladies-top-menu ul li:last-child{
+	margin-right: 35px;
 }
 
 #ladies-top-menu ul li:last-child{
@@ -199,7 +211,7 @@ color:#0066FF;
 
 #ladies-top-news{
 	width: 100%;
-	min-height: 480px;
+	min-height: 530px;
 	background: #fff;
 	margin-top: 25px;
     border-radius: 5px;
@@ -220,8 +232,9 @@ color:#0066FF;
 	width: 47%;
 	display: inline-block;
 	float: left;
-	padding-left: 22px;
-    padding-right: 10px;
+	margin: auto;
+    padding-left: 16px;
+    padding-right: 25px;
 }
 
 #top-1 a{
@@ -246,8 +259,9 @@ color:#0066FF;
 #top-2 {
 	width: 47%;
 	display: inline-block;
-	float: left;
-	padding-right: 22px;
+	float: right;
+	margin: auto;
+    padding-right: 16px;
 }
 
 #top-2 a{
@@ -307,7 +321,7 @@ color:#0066FF;
 }
 
 .category-left{
-	width: 40%;
+	max-width: 40%;
 	display: inline-block;
 	float: left;
 	margin-right: 15px;
@@ -330,6 +344,10 @@ color:#0066FF;
 	text-align: center;
 }
 
+.category-right article img{
+	width: 20%;
+}
+
 
 .category-right{
 	width: 55%;
@@ -339,7 +357,7 @@ color:#0066FF;
 }
 
 .category-right article{
-	height: 60px;
+	min-height: 60px;
 	padding-bottom: 10px;
 	border-bottom: 1px dotted #000;
 
@@ -377,8 +395,8 @@ color:#0066FF;
 }
 
 #other{
-	width: 28%;
-	float: left;
+	width: 27%;
+    float: left;
 }
 
 #ladies-top-articles{
@@ -542,6 +560,7 @@ color:#0066FF;
 
 #quote{
 	width: 100%;
+	min-height: 300px;
 	text-align: center;
 	float: left;
 	margin: 25px 0px 0px 15px;
@@ -551,7 +570,7 @@ color:#0066FF;
 
 #quote-box{
 	width: 100%;
-	margin-top: 20px;
+	margin-top: 50px;
 }
 
 #right-aside{
@@ -593,4 +612,251 @@ text-align:center;
 width:960px;
 padding:8px;
 margin:0px auto;
+}
+
+@media(max-width: 1300px){
+	body{
+		background: red;
+	}
+
+	#ladies-top-news{
+		min-height: 590px;
+	}
+
+	#ladies-top-menu ul li{
+		padding: 8px 40px 8px 37px;
+	}
+
+	#ladies-top-menu ul li a{
+		font-size: 15px;
+	}
+
+	#top-1{
+		max-width: 50%;
+	    height: auto;
+	    padding-left: 15px;
+	    padding-right: 12px;
+	}
+
+	#top-2{
+		max-width: 50%;
+	    height: auto;
+	    padding-right: 15px;
+	}
+
+	.category-left img{
+		height: auto;
+	}
+
+	.category-right{
+		max-width: 52%;
+	}
+
+	.category-right article a p{
+		font-size: 12px;
+	}
+
+	.category-right article img{
+		height: auto;
+	}
+
+	#ladies-top-articles-box article img{
+		width: 25%;
+		height: auto;
+	}
+
+	#ladies-top-articles-box article a p{
+		font-size: 10px;
+	}
+
+	#ladies-select-recepy-box img{
+		height: auto;
+	}
+
+}
+
+
+@media(max-width: 960px){
+	body{
+		background: green;
+	}
+
+	#ladies-top-menu ul li{
+		padding: 8px 18px 8px 18px;
+	}
+
+	#ladies-top-news{
+		min-height: 990px;
+	}
+
+	#top-1{
+		width: 100%;
+	    display: block;
+	    float: left;
+	    margin-left: 25%;
+	    margin-bottom: 10px;
+	}
+
+	#top-2{
+		width: 100%;
+	    display: block;
+	    float: left;
+	    margin-left: 28%;
+	}
+
+	#top-1 span img{
+		height: auto;
+	}
+
+	#top-2 span img{
+		height: auto;
+	}
+
+	.category-right article a p{
+		font-size: 11px;
+	}
+
+	#category{
+		width: 97%;
+	}
+
+	#other{
+		width: 95%;
+	}
+
+	#ladies-top-articles{
+		min-height: 300px;
+	}
+
+	#ladies-top-articles-box{
+		width: 79%;
+	}
+
+	#ladies-top-articles-box article{
+		display: block;
+	}
+
+	#ladies-top-articles-box article img {
+		width: 12%;
+	}
+
+	#ladies-top-articles-box article a p{
+		font-size: 15px;
+	}
+
+	#ladies-select-recepy-box a p{
+		font-size: 15px;
+	}
+
+	#ladies-select-book-box a p{
+		font-size: 25px;
+	}
+
+	#wrapper{
+		min-height: 3990px;
+	}
+
+	#clock{
+		visibility: hidden;
+	}
+
+	#quote{
+		visibility: hidden;
+	}
+
+}
+
+
+@media(max-width: 780px){
+	body{
+		background: blue;
+	}
+
+	#ladies-top-menu ul li{
+		padding: 8px 5px 8px 5px;
+	}
+
+	#ladies-top-menu ul li:first-child{
+		margin-left: 0px;
+	}
+
+	#ladies-top-menu ul li:last-child{
+		margin-right: 30px;
+	}
+
+	#ladies-top-menu ul li a{
+		font-size: 12px;
+	}
+
+	#ladies-top-news{
+		min-height: 1200px;
+	}
+
+	.category-left a p{
+		font-size: 15px;
+	}
+
+	.category-right span p{
+		font-size: 12px;
+	}
+
+	.category-right{
+		max-width:45%; 
+	}
+
+	#ladies-top-articles-box article a p{
+		font-size: 10px;
+	}
+
+	#ladies-select-book-box a p{
+		font-size: 20px;
+	}
+
+	#category{
+		width: 95%;
+	}
+
+	#other{
+		width: 92%;
+	}
+	
+	#wrapper{
+		min-height: 3850px;
+	}
+}
+
+@media(max-width: 480px){
+	body{
+		background: yellow;
+	}
+
+	#ladies-top-menu ul li{
+		display: block;
+		border: none;
+	}
+
+	#ladies-top-menu ul li:last-child{
+		border: none;
+		margin-right: 0px;
+	}
+
+	#ladies-top-menu ul li a{
+		font-size: 15px;
+	}
+
+	#ladies-top-news{
+		min-height: 1100px;
+	}
+
+	#top-1 span p{
+		visibility: hidden;
+	}
+
+	#top-2 span p{
+		visibility: hidden;
+	}
+
+	#top-2{
+		margin-top: -230px;
+	}
 }
