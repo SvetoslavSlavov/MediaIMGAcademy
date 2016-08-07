@@ -43,7 +43,7 @@
 	</div>
 	<div id="right-center-header">
 		<div id="menu-right-center-header">
-		<a href="#">Контакти</a> | <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Aasdkjhsa</a> 
+		<a href="#">Контакти</a> | <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Google Plus</a> 
 		</div>
 		<div id="w2b-searchbox">
 		<form id="w2b-searchform" action="pencarian" method="POST">
@@ -59,22 +59,46 @@
 	</div>
 	<div id="line-menu">
 		<div id="center-menu">
-			<ul>
-				<li><a href="index.html">Plovdiv News</a></li>
-				<li><a href="#">България</a></li>
-				<li><a href="#">Светът</a></li>
-				<li><a href="#">Коментар</a></li>
-				<li><a href="#">Лайфстайл</a></li>
-				<li><a href="#">Спорт</a></li>
-				<li><a href="#">Моята Новина</a></li>
-				<li><a href="#">Камерите</a></li>
-				<li><a href="#">Галирия</a></li>
-				<li><a href="#">Емисии</a></li>
-				<li><a href="#">Най-четени</a></li>
-				<li><a href="#">Евро 2016</a></li>
-			</ul>
-			<div class="cleaner_h0"></div>
-		</div>
+		<ul>
+			<li class="hamburger"onclick="myFunction();"><a href="#">☰ Меню</a></li>
+		</ul>
+		<ul id="nav"class="nav-hide">
+			
+			<li><a href="index.html">Plovdiv News</a></li>
+			<li><a href="#">България</a></li>
+			<li><a href="#">Светът</a></li>
+			<li><a href="#">Коментар</a></li>
+			<li><a href="#">Лайфстайл</a></li>
+			<li><a href="sport.html">Спорт</a></li>
+			<li><a href="#">Моята Новина</a></li>
+			<li><a href="#">Камерите</a></li>
+			<li><a href="#">Галирия</a></li>
+			<li><a href="#">Емисии</a></li>
+			<li><a href="#">Най-четени</a></li>
+			<li><a href="#">Евро 2016</a></li>
+			
+			<!--<li class="icon">
+			    <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
+			</li>-->
+		</ul>
+		<div class="cleaner_h0"></div>
+	</div>
+
+</header>
+<script>
+	function myFunction(){
+		var x = document.getElementById("nav");
+		if (x.className === "nav-hide") {
+        x.className = "nav-show";
+        //document.getElementById("center-content").style.marginTop = "200px";
+	    } else {
+	        x.className = "nav-hide";
+	        //document.getElementById("center-content").style.marginTop = "547px";//
+	        	
+	    }
+	}
+</script>
+		<!-- hamburger 
 			<button class="hamburger">&#9776;</button>
   			<button class="cross">&#735;</button>
 			<div class="menu">
@@ -90,7 +114,8 @@
 				<li><a href="#">Емисии</a></li>
 				<li><a href="#">Най-четени</a></li>
 				<li><a href="#">Евро 2016</a></li>
-			</div>
+			</div> -->
+
 	</div>
 	
 </header>
@@ -178,13 +203,13 @@
 			<img src="images/sport-page/add.png">
 		</div>
 		<div class="news-box-sport">
-			<article>
+			<article class="art-1">
 				<div class="top-img-info"><p>Тенис<p></div>
 				<img src="images/sport-page/tenis.jpg">
 				<a href="#">Джокович се класира за полуфиналите в Торонто </a>
 				<a href="#">19-годишна тенисистка въздиша по Надал </a>
 				<a href="#">След три седмици в болница лечението на...</a>
-			</article>
+			</article class="art-1">
 			<article>
 				<div class="top-img-info"><p>Волейбол<p></div>
 				<img src="images/sport-page/volleyball.jpg">
@@ -192,7 +217,7 @@
 				<a href="#">България с трета поредна загуба на световн... </a>
 				<a href="#">Капитанът Велизар Чернокожев: Полша е мног... </a>
 			</article>
-			<article class="top-art">
+			<article class="art-2">
 				<div class="top-img-info"><p>Голф<p></div>
 				<img src="images/sport-page/golf.jpg">
 				<a href="#">Една ера е към своя край </a>
@@ -201,21 +226,21 @@
 			</article>
 		</div>			
 		<div class="news-box-sport">
-			<article>
+			<article class="art-2">
 				<div class="top-img-info"><p>MMA<p></div>
 				<img src="images/sport-page/mma.jpg">
 				<a href="#">Бившият световен шампион във версия Световна... </a>
 				<a href="#">Теди Ринер от Франция вярва, че конкуренци...  </a>
 				<a href="#">Според треньорът по бокс Ricky Funez, Na... </a>
 			</article>
-			<article class="top-art-2">
+			<article class="art-3">
 				<div class="top-img-info"><p>Хокей<p></div>
 				<img src="images/sport-page/hockey.jpg">
 				<a href="#">БЕЛАРУС: Купа на Беларус</a>
 				<a href="#">СВЯТ: Приятелски клубни срещи</a>
 				<a href="#">СВЯТ: Приятелски международни срещи</a>
 			</article>
-			<article> 
+			<article class="art-3"> 
 				<div class="top-img-info"><p>Баскетбол<p></div>
 				<img src="images/sport-page/basketball.jpg">
 				<a href="#">Щатите доминират, удържаха съперник до ...</a>
@@ -223,10 +248,10 @@
 				<a href="#">Ще играем за 15-ото място на европейск ...</a>
 			</article>
 		</div>
-		<div id="big-news-down">
+		<article id="big-news-down">
+		<div id="big-news-down-info">Ясен Петров след уникалното изпращане в Китай: Настръхват ми косите, когато се сетя за сълзите и тъгата на хората</div>
 			<img src="images/sport-page/mino.jpg">
-			<div class="big-info"><h2>Ясен Петров след уникалното изпращане в Китай: Настръхват ми косите, когато се сетя за сълзите и тъгата на хората</h2></div>
-		</div>
+		</article>
 		<div id="most-read">
 				<h5>Най-четените новини</h5>
 				<div class="most-read-news">
@@ -269,7 +294,7 @@
 				<img src="images/sport-page/sinoptik.png">
 			</div>
 			<div id="video">				
-				<iframe width="686" height="315" src="https://www.youtube.com/embed/xSNE0FOW5mg" frameborder="0" allowfullscreen></iframe>
+				<iframe width="486" height="315" src="https://www.youtube.com/embed/xSNE0FOW5mg" frameborder="0" allowfullscreen></iframe>
 			</div>
 			
 		
@@ -303,7 +328,7 @@ $( ".hamburger" ).show();
 <script type="text/javascript" src="js/button.top.js"></script>
 <footer>
 	<div id="footer-menu">
-	<div id="center-footer-menu"><a href="#">Контакти </a>| <a href="#">Facebook</a> | <a href="#">Twitter</a> <a href="#">Коментар</a> | <a href="#">Aasdhjdak</a></div>
+	<div id="center-footer-menu"><a href="#">Контакти </a>| <a href="#">Facebook</a> | <a href="#">Twitter</a> <a href="#">Коментар</a> | <a href="#">Google Plus</a></div>
 	</div>
 
 	<div id="footer">
