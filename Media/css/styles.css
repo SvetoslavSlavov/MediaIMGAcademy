@@ -681,19 +681,23 @@ margin:0px auto;
 		background: green;
 	}
 
+	#line-top{
+		display: none;
+	}
+
 	#ladies-top-menu ul li{
 		padding: 8px 18px 8px 18px;
 	}
 
 	#ladies-top-news{
-		min-height: 990px;
+		min-height: 900px;
 	}
 
 	#top-1{
 		width: 100%;
 	    display: block;
 	    float: left;
-	    margin-left: 25%;
+	    margin-left: 23%;
 	    margin-bottom: 10px;
 	}
 
@@ -701,7 +705,7 @@ margin:0px auto;
 		width: 100%;
 	    display: block;
 	    float: left;
-	    margin-left: 28%;
+	    margin-left: 26%;
 	}
 
 	#top-1 span img{
@@ -710,6 +714,22 @@ margin:0px auto;
 
 	#top-2 span img{
 		height: auto;
+	}
+
+	#top-1 span h2{
+		font-size: 15px;
+	}
+
+	#top-2 span h2{
+		font-size: 15px;
+	}
+
+	#top-1 span p{
+		font-size: 10px;
+	}
+
+	#top-2 span p{
+		font-size: 10px;
 	}
 
 	.category-right article a p{
@@ -753,7 +773,7 @@ margin:0px auto;
 	}
 
 	#wrapper{
-		min-height: 3990px;
+		min-height: 3900px;
 	}
 
 	#clock{
@@ -788,8 +808,16 @@ margin:0px auto;
 		font-size: 12px;
 	}
 
+	#top-1 span h2{
+		font-size: 12px;
+	}
+
+	#top-2 span h2{
+		font-size: 12px;
+	}
+
 	#ladies-top-news{
-		min-height: 1200px;
+		min-height: 850px;
 	}
 
 	.category-left a p{
@@ -821,7 +849,7 @@ margin:0px auto;
 	}
 	
 	#wrapper{
-		min-height: 3850px;
+		min-height: 3550px;
 	}
 }
 
@@ -845,18 +873,205 @@ margin:0px auto;
 	}
 
 	#ladies-top-news{
-		min-height: 1100px;
+		min-height: 550px;
 	}
 
 	#top-1 span p{
 		visibility: hidden;
+		display: none;
 	}
 
 	#top-2 span p{
 		visibility: hidden;
+		display: none;
 	}
 
-	#top-2{
-		margin-top: -230px;
+	#category{
+		width: 100%;
+    	margin-left: -10px;
+	}
+
+	.category-head h2{
+		font-size: 20px;
+	}
+
+	.category-left{
+		max-width: 80%;
+	    display: block;
+	    margin-bottom: 15px;
+    	border-bottom: 1px dotted 
+	}
+
+	.category-left a p{
+		font-size: 12px;
+	}
+
+	.category-right{
+		max-width: 100%;
+	}
+
+	.category-right article{
+		padding-top: 10px;
+	}
+
+	.category-right article img{
+		width: 50%;
+	}
+
+	.category-right article a p{
+		font-size: 10px;
+		display: inline-block;
+	}
+
+	.category-right span p{
+		text-align: left;
+	}
+
+	#ladies-top-articles-box article img{
+		width: 30%;
+    	display: block;
+	}
+
+	#ladies-top-articles-box article a p{
+	    display: block;
+	    float: right;
+	}
+
+	#ladies-top-articles{
+		min-height: 650px;
+	}
+
+	#other{
+		width: 100%;
+    	margin-left: -15px;
+	}
+
+	#ladies-select-recepy-box a p{
+		font-size: 12px;
+	}
+
+	#ladies-select-book-box a p{
+		font-size: 15px;
+	}
+
+	#wrapper{
+		min-height: 5000px;
 	}
 }
+
+
+/* @media screen and (max-width: 1035px){
+	.ticker-swipe{
+		background: none;
+	}
+	#left-center-header{
+		width: auto;
+	}
+	#logo{
+		max-width: 100%;
+	}	
+	#line-top{
+		height: 0;
+		box-shadow: none;
+		width: 100%;
+		background: #014686!important;
+		padding-bottom: 25px;
+	}
+	.cleaner_h30{
+		height: 0;
+		padding-top: 30px;
+	}
+	#center-line-top{
+		width: auto;
+	}
+	.cleaner_h30{
+		height: 0;
+		padding-top: 3%;
+	}
+	#line-header{
+		height: 0;
+	}
+	#center-header{
+		width: auto;
+		/*height: 0;*/
+	}
+	/* #left-center{
+		width: auto;
+	}
+	#right-center-header{
+		width: auto;
+	}
+	#line-menu{
+		background: none;
+		box-shadow: none;
+		border-top: none;
+		border-bottom: none;
+	}
+	#menu-right-center-header{
+		width: none;
+		padding: 0;
+		position: absolute;
+		top: 0;
+		right: 0;
+		z-index: 2;
+	}
+	#w2b-searchbox{
+		width: auto;
+	}
+	#date-right-center-header{
+		padding: 0;
+		width: auto;
+	}
+
+	#center-menu{
+		width: auto;
+		background: whitesmoke;
+	}
+
+	.nav-show{
+		display: block;
+		text-align: center;
+	}
+	.nav-show li{
+		width: 100%;
+		background: whitesmoke;
+		background-size: 100% 100%;
+		margin: 0;
+		padding: 0;
+	}
+	.nav-hide{
+		float: none;
+		display: none;
+		/*display: block;*/
+		text-align: center;
+	}
+	/* .hamburger{
+		display: block!important;
+	}
+	.hamburger a{
+		font-size: 1.5em;
+	}
+	#center-content{margin-top: 200px;}
+	#center-menu ul li:hover{
+		background: orange;
+	}
+	#center-menu ul li a:hover{
+		font-size: 1.7em;
+	}
+
+	#footer{
+		background: #0176AD;
+		background-image: none;
+	}
+	#center-footer-menu{
+		width: auto;
+	}
+	#center-footer{
+		width: auto;
+	}
+}
+
+@media screen and (max-width: 971px){
+	#line-top{
+		display: none;
+	} 
