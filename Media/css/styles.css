@@ -160,7 +160,6 @@ color:#0066FF;
 	width: 75%;
 	margin: 0 auto;
 	margin-top: 40px;
-	border: 1px solid #ccc;
 	border-radius: 10px;
 }
 
@@ -228,6 +227,10 @@ color:#0066FF;
 	background: #fff;
 	margin-top: 25px;
 	margin-bottom: 10px;
+	border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 #top-new{
@@ -721,11 +724,31 @@ margin:0px auto;
 	}
 
 	#category{
-		width: 97%;
+		width: 100%;
+	}
+
+	.category{
+		margin-left: 0px;
 	}
 
 	#other{
-		width: 95%;
+		width: 100%;
+	}
+
+	#ladies-top-articles{
+		margin-left: 0px;
+	}
+
+	#ladies-select-recepy{
+		margin-left: 0px;
+	}
+
+	#ladies-select-book{
+		margin-left: 0px;
+	}
+
+	#quote{
+		margin-left: 0px;
 	}
 
 	#ladies-top-articles-box{
