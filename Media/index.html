@@ -445,23 +445,22 @@ $(document).ready(function() {
 
 <div id="content">
 	<div id="center-content">
-	<div id="left-center-content">
-	<div class="cleaner_h10"></div>
-
-	<img src="images/iklan-left.png" />
-	<div class="cleaner_h10"></div>
+		<div id="left-center-content">
+			<div class="cleaner_h10"></div>
+			<img src="images/iklan-left.png" />
+			<div class="cleaner_h10"></div>
 	
-	<script>
-$(document).ready(function(){
-$("a.tab").click(function () {
-$(".active").removeClass("active");
-$(this).addClass("active");
-$(".content").slideUp();
-var content_show = $(this).attr("title");
-$("#"+content_show).slideDown();
-});
-});
-</script>
+				<script>
+			$(document).ready(function(){
+			$("a.tab").click(function () {
+			$(".active").removeClass("active");
+			$(this).addClass("active");
+			$(".content").slideUp();
+			var content_show = $(this).attr("title");
+			$("#"+content_show).slideDown();
+			});
+			});
+			</script>
 <div class="tabbed_box">
                     <div class="tabbed_area">
                         <ul class="tabs">
