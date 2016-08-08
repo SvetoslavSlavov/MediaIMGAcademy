@@ -10,6 +10,7 @@
     <script src="js/button.top.js" type="text/javascript"></script>
     <link href="css/style.css" rel="stylesheet" type="text/css" />
     <link href="css/button.top.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="css/media-queries.css">
     <script>
 //$(document).ready(function() {
 //   $('#slider').s3Slider({
@@ -67,20 +68,24 @@
             </div>
             <div id="line-menu">
                 <div id="center-menu">
-                    <ul>
-                        <li><a href="index.html">Plovdiv News</a></li>
-                        <li><a href="#">България</a></li>
-                        <li><a href="#">Светът</a></li>
-                        <li><a href="#">Коментар</a></li>
-                        <li><a href="#">Лайфстайл</a></li>
-                        <li><a href="sport.html">Спорт</a></li>
-                        <li><a href="#">Моята Новина</a></li>
-                        <li><a href="#">Камерите</a></li>
-                        <li><a href="#">Галирия</a></li>
-                        <li><a href="#">Емисии</a></li>
-                        <li><a href="#">Най-четени</a></li>
-                        <li><a href="#">Евро 2016</a></li>
-                    </ul>
+        <ul>
+            <li class="hamburger"onclick="myFunction();"><a href="#">☰ Меню</a></li>
+        </ul>
+        <ul id="nav"class="nav-hide">
+            
+            <li><a href="index.html">Plovdiv News</a></li>
+            <li><a href="#">България</a></li>
+            <li><a href="#">Светът</a></li>
+            <li><a href="#">Коментар</a></li>
+            <li><a href="lifestyle/allarticles.html">Лайфстайл</a></li>
+            <li><a href="sport.html">Спорт</a></li>
+            <li><a href="#">Моята Новина</a></li>
+            <li><a href="#">Камерите</a></li>
+            <li><a href="#">Галирия</a></li>
+            <li><a href="#">Емисии</a></li>
+            <li><a href="#">Най-четени</a></li>
+            <li><a href="#">Евро 2016</a></li>
+            </ul>
                     <div class="cleaner_h0"></div>
                 </div>
             </div>
@@ -260,10 +265,10 @@ document.write("<a href='http://twitter.com/home/?status=" + document.URL + "' t
                 </div>
                 <div class="cleaner_h10"></div>
                 <div id="detail-img-with-article">
-                    <img src="articles-images/2.jpg" width="300" height="200" />
+                    <img class="text" src="articles-images/2.jpg" width="300" height="200" />
                     <div class="cleaner_h10"></div>
-                    <strong>Други Новини</strong>
-                    <ul>
+                    <strong class="non">Други Новини</strong>
+                    <ul class="drugi-nov">
                         <li><a href="#">България и Гърция ще строят жп линия между Бяло и Черно море</a></li>
                         <li><a href="#">България и Гърция ще строят жп линия между Бяло и Черно море</a></li>
                         <li><a href="#">България и Гърция ще строят жп линия между Бяло и Черно море</a></li>
@@ -272,7 +277,7 @@ document.write("<a href='http://twitter.com/home/?status=" + document.URL + "' t
                         <li><a href="#">България и Гърция ще строят жп линия между Бяло и Черно море</a></li>
                     </ul>
                 </div>
-                Двете държави нямат никакви различия по кризисните въпроси, стана ясно след разговори между правителствата
+                <div class="text"> Двете държави нямат никакви различия по кризисните въпроси, стана ясно след разговори между правителствата
                 <br /><br />
                 Връзката между Бургас и Александруполис отново стана актуална. България и Гърция ще строят жп линия между Бяло и Черно море. Тя ще свързва двата града и заради общите ни енергийни проекти.
                 <br /><br />
@@ -284,6 +289,7 @@ document.write("<a href='http://twitter.com/home/?status=" + document.URL + "' t
                 <br /><br />
                 „Идеята е да се разшири с добавяне на два интермодални терминала в Александруполис и Бургас, като уговорката ни е в първата седмица на септември да се срещнем и след това да отидем до Брюксел, за да видим дали е удачно да се финансира проектът по плана „Юнкер”, коментира транспортният министър Ивайло Московски.
                 <br /><br />
+                </div>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/jysWuGTe7Gs" frameborder="0" allowfullscreen></iframe>
 
                 <div class="cleaner_h20"></div>
@@ -343,11 +349,25 @@ document.write("<a href='http://twitter.com/home/?status=" + document.URL + "' t
         <div id="footer">
             <div id="center-footer">
                 Copyright © 2016 IMG Academy Plovdiv.<br />
-                Powered by : <a href="https://www.facebook.com/petia.stoianova.587">Петя Иванова</a> | <a href="https://www.facebook.com/elena.mumdzhieva">Ели Мумджиева </a> | <a href="https://www.facebook.com/Svetoslav.Slavov.bg">Светослав Славов</a> | <a href="https://www.facebook.com/ivan.timov">Иван Тимов</a>
+                Uchastnici,...,........,...... Tel.-62 333 420600. Fax.-62 333 414890<br />
+                You come here with the IP Address 180.247.235.203<br />
             </div>
         </div>
         <a href="#" class="scrollToTop"></a>
     </footer>
+    <script>
+    function myFunction(){
+        var x = document.getElementById("nav");
+        if (x.className === "nav-hide") {
+        x.className = "nav-show";
+        //document.getElementById("center-content").style.marginTop = "200px";
+        } else {
+            x.className = "nav-hide";
+            //document.getElementById("center-content").style.marginTop = "547px";//
+                
+        }
+    }
+</script>
 
 
 </body>
