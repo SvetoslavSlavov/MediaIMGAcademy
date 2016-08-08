@@ -754,6 +754,11 @@ margin:0px auto;
 
 }
 
+@media(max-width: 865px){
+	#quote{
+		display: none;
+	}
+}
 
 @media(max-width: 780px){
 
