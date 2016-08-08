@@ -1,13 +1,26 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8" />
-<title>For Ladies</title>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script> 
+<!-- disable iPhone inital scale -->
+<meta name="viewport" content="width=device-width; initial-scale=1.0">
+<title>For Ladiess</title>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> 
 <script language="javascript" src="js/jquery.ticker.js"></script>
 <script language="javascript" src="js/site.js"></script>
+<script src="js/s3Slider.js" type="text/javascript"></script>
+<script src="js/button.top.js"type="text/javascript"></script>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
 <link href="css/styles.css" rel="stylesheet" type="text/css" />
-
+<link href="css/button.top.css"rel="stylesheet"type="text/css"/>
+<link rel="stylesheet" href="css/media-queries.css">
+<script>
+$(document).ready(function() { 
+   $('#slider').s3Slider({ 
+      timeOut: 6000 
+   });
+});
+</script>
 </head>
 
 <body onLoad="goforit()">
@@ -22,10 +35,10 @@
 
 	<div id="hot-news">
 		<ul id="js-news" class="js-hidden">
-			<li> Изнася ви България оръжия за Сирия</li>
-			<li>Бойко Борисов поискал помощ от Ангела Меркел за охраната на границата</li>
-			<li>Защитата: Обвинението за тероризъм срещу тримата сирийци е плод на натиск</li>
-			<li>Безкомпромисен Григор Димитров се класира за четвъртфинал в Торонто</li>
+			<li><a href="#">Изнася ви България оръжия за Сирия</a></li>
+			<li><a href="#">Бойко Борисов поискал помощ от Ангела Меркел за охраната на границата</a></li>
+			<li><a href="#">Защитата: Обвинението за тероризъм срещу тримата сирийци е плод на натиск</a></li>
+			<li><a href="#">Безкомпромисен Григор Димитров се класира за четвъртфинал в Торонто</a></li>
 		</ul>
 	</div>
 
@@ -38,11 +51,10 @@
 	<div id="center-header">
 	<div id="left-center-header">
 		<img id="logo"src="images/logo.png" />
-		<img id="ladies_logo" src="images/Ladies_logo.png"/>
 	</div>
 	<div id="right-center-header">
 		<div id="menu-right-center-header">
-		<a href="#">Контакти</a> | <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Aasdkjhsa</a> 
+		<a href="#">Контакти</a> | <a href="https://www.facebook.com/plovdivnews/">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Google Plus</a> 
 		</div>
 		<div id="w2b-searchbox">
 		<form id="w2b-searchform" action="pencarian" method="POST">
@@ -57,14 +69,14 @@
 	</div>
 	</div>
 	<div id="line-menu">
-	<div id="center-menu">
+	<!--<div id="center-menu">
 		<ul>
 			<li><a href="index.html">Plovdiv News</a></li>
 			<li><a href="#">България</a></li>
 			<li><a href="#">Светът</a></li>
-			<li><a href="For_Ladies.html">За жените</a></li>
+			<li><a href="#">Коментар</a></li>
 			<li><a href="#">Лайфстайл</a></li>
-			<li><a href="#">Спорт</a></li>
+			<li><a href="sport.html">Спорт</a></li>
 			<li><a href="#">Моята Новина</a></li>
 			<li><a href="#">Камерите</a></li>
 			<li><a href="#">Галирия</a></li>
@@ -73,9 +85,47 @@
 			<li><a href="#">Евро 2016</a></li>
 		</ul>
 		<div class="cleaner_h0"></div>
+	</div>-->
+	<div id="center-menu">
+		<ul>
+			<li class="hamburger"onclick="myFunction();"><a href="#">☰ Меню</a></li>
+		</ul>
+		<ul id="nav"class="nav-hide">
+			
+			<li><a href="index.html">Plovdiv News</a></li>
+			<li><a href="#">България</a></li>
+			<li><a href="#">Светът</a></li>
+			<li><a href="#">Коментар</a></li>
+			<li><a href="lifestyle/allarticles.html">Лайфстайл</a></li>
+			<li><a href="sport.html">Спорт</a></li>
+			<li><a href="#">Моята Новина</a></li>
+			<li><a href="#">Камерите</a></li>
+			<li><a href="#">Галирия</a></li>
+			<li><a href="#">Емисии</a></li>
+			<li><a href="#">Най-четени</a></li>
+			<li><a href="#">Евро 2016</a></li>
+			
+			<!--<li class="icon">
+			    <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
+			</li>-->
+		</ul>
+		<div class="cleaner_h0"></div>
 	</div>
-	</div>
+
 </header>
+<script>
+	function myFunction(){
+		var x = document.getElementById("nav");
+		if (x.className === "nav-hide") {
+        x.className = "nav-show";
+        //document.getElementById("center-content").style.marginTop = "200px";
+	    } else {
+	        x.className = "nav-hide";
+	        //document.getElementById("center-content").style.marginTop = "547px";//
+	        	
+	    }
+	}
+</script>
 
 <div id="wrapper">
 	<div id="ladies-top-menu">
@@ -279,16 +329,16 @@
 
 <footer>
 	<div id="footer-menu">
-	<div id="center-footer-menu"><a href="#">Контакти </a>| <a href="#">Facebook</a> | <a href="#">Twitter</a> <a href="#">Коментар</a> | <a href="#">Aasdhjdak</a></div>
+	<div id="center-footer-menu"><a href="#">Контакти </a>| <a href="https://www.facebook.com/plovdivnews/">Facebook</a> | <a href="#">Twitter</a> <a href="#">Коментар</a> | <a href="#">Google Plus</a></div>
 	</div>
 
 	<div id="footer">
 	<div id="center-footer">
 	Copyright © 2016 IMG Academy Plovdiv.<br />
-	Uchastnici,...,........,...... Tel.-62 333 420600. Fax.-62 333 414890<br />
-	You come here with the IP Address 180.247.235.203<br />
+	Powered by : <a href="https://www.facebook.com/petia.stoianova.587">Петя Иванова</a> | <a href="https://www.facebook.com/elena.mumdzhieva">Ели Мумджиева </a> | <a href="https://www.facebook.com/Svetoslav.Slavov.bg">Светослав Славов</a> | <a href="https://www.facebook.com/ivan.timov">Иван Тимов</a>
 	</div>
 	</div>
+	<a href="#" class="scrollToTop"></a>
 </footer>
 </body>
 </html>
