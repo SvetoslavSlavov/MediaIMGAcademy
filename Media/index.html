@@ -10,9 +10,13 @@
 <script language="javascript" src="js/site.js"></script>
 <script src="js/s3Slider.js" type="text/javascript"></script>
 <script src="js/button.top.js"type="text/javascript"></script>
+<link href="css/style1.css" rel="stylesheet" type="text/css" />
 <link href="css/style.css" rel="stylesheet" type="text/css" />
 <link href="css/button.top.css"rel="stylesheet"type="text/css"/>
 <link rel="stylesheet" href="css/media-queries.css">
+<script src="js/modernizr.custom.js"></script>
+<link rel="stylesheet" type="text/css" href="css/allarticles.css">
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
 <script>
 $(document).ready(function() { 
    $('#slider').s3Slider({ 
@@ -53,7 +57,7 @@ $(document).ready(function() {
 	</div>
 	<div id="right-center-header">
 		<div id="menu-right-center-header">
-		<a href="#">Контакти</a> | <a href="https://www.facebook.com/plovdivnews/">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Google Plus</a> 
+		<a href="#">Контакти</a> | <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Google Plus</a> 
 		</div>
 		<div id="w2b-searchbox">
 		<form id="w2b-searchform" action="pencarian" method="POST">
@@ -67,47 +71,360 @@ $(document).ready(function() {
 		</div>
 	</div>
 	</div>
-	<div id="line-menu">
-	<!--<div id="center-menu">
-		<ul>
-			<li><a href="index.html">Plovdiv News</a></li>
-			<li><a href="#">България</a></li>
-			<li><a href="#">Светът</a></li>
-			<li><a href="#">Коментар</a></li>
-			<li><a href="#">Лайфстайл</a></li>
-			<li><a href="sport.html">Спорт</a></li>
-			<li><a href="#">Моята Новина</a></li>
-			<li><a href="#">Камерите</a></li>
-			<li><a href="#">Галирия</a></li>
-			<li><a href="#">Емисии</a></li>
-			<li><a href="#">Най-четени</a></li>
-			<li><a href="#">Евро 2016</a></li>
-		</ul>
-		<div class="cleaner_h0"></div>
-	</div>-->
-	<div id="center-menu">
-		<ul>
-			<li class="hamburger"onclick="myFunction();"><a href="#">☰ Меню</a></li>
-		</ul>
-		<ul id="nav"class="nav-hide">
-			
-			<li><a href="index.html">Plovdiv News</a></li>
-			<li><a href="#">България</a></li>
-			<li><a href="#">Светът</a></li>
-			<li><a href="#">Коментар</a></li>
-			<li><a href="lifestyle/allarticles.html">Лайфстайл</a></li>
-			<li><a href="sport.html">Спорт</a></li>
-			<li><a href="#">Моята Новина</a></li>
-			<li><a href="#">Камерите</a></li>
-			<li><a href="#">Галирия</a></li>
-			<li><a href="#">Емисии</a></li>
-			<li><a href="#">Най-четени</a></li>
-			<li><a href="#">Евро 2016</a></li>
-			
-			<!--<li class="icon">
-			    <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
-			</li>-->
-		</ul>
+	 <div id="line-menu1">
+                <div id="center-menu1">
+                <ul>
+                    <li class="hamburger" onclick="myFunction();"><a href="#">☰ Меню</a></li>
+                </ul>
+                <ul id="nav" class="nav-hide">
+                    
+                    <li><a href="index.html">Plovdiv News</a></li>
+                    <li><a href="#">България</a></li>
+                    <li><a href="#">Светът</a></li>
+                    <li><a href="#">Коментар</a></li>
+                    <li><a href="#">Лайфстайл</a></li>
+                    <li><a href="sport.html">Спорт</a></li>
+                    <li><a href="#">Моята Новина</a></li>
+                    <li><a href="#">Камерите</a></li>
+                    <li><a href="#">Галирия</a></li>
+                    <li><a href="#">Емисии</a></li>
+                    <li><a href="#">Най-четени</a></li>
+                    <li><a href="#">Евро 2016</a></li>
+                    
+                    <!--<li class="icon">
+                        <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
+                    </li>-->
+                </ul>
+                <nav id="cbp-hrmenu" class="cbp-hrmenu">
+                    <ul>
+                        <li>
+                            <a href="index.html">Plovdiv News</a>
+                        </li>
+                        <li>
+                            <a href="#">България</a>
+                            <div class="cbp-hrsub">
+                                <div class="cbp-hrsub-inner"> 
+                                    <div class="drop-menu">
+                                        <ul>
+                                            <li><a href="#">Водещи</a></li>
+                                            <li><a href="#">Новини от света</a></li>
+                                            <li><a href="#">Новините днес</a></li>
+                                            <li><a href="#">Новините вчера</a></li>
+                                            <li><a href="#">Най-четени</a></li>
+                                            <li><a href="#">Емисии</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="drop-down-under">
+                                        <div class="left-art">
+                                            <img src="images/fb.png" alt="#" width="250px" height="150px;">
+                                            <p>Текстът към снимката ще бъде тук</p>
+                                        </div>
+                                        <div class="right-art">
+                                            <div class="inn-art">
+                                                <img src="images/fb.png" alt="#" width="125px" height="75px;">
+                                                <p class="text">Текстът към снимката ще бъде тук</p>
+                                            </div>
+                                            <div class="inn-art">
+                                                <img src="images/f1.jpg" alt="#" width="125px" height="75px;">
+                                                <p class="text">Текстът към снимката ще бъде тук</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!-- /cbp-hrsub-inner -->
+                            </div><!-- /cbp-hrsub -->
+                        </li>
+                        <li>
+                            <a href="#">Светът</a>
+                            <div class="cbp-hrsub">
+                                <div class="cbp-hrsub-inner"> 
+                                    <div class="drop-menu">
+                                        <ul>
+                                            <li><a href="#">Водещи</a></li>
+                                            <li><a href="#">Новини от света</a></li>
+                                            <li><a href="#">Новините днес</a></li>
+                                            <li><a href="#">Новините вчера</a></li>
+                                            <li><a href="#">Най-четени</a></li>
+                                            <li><a href="#">Емисии</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="drop-down-under">
+                                        <div class="left-art">
+                                            <img src="images/fb.png" alt="#" width="250px" height="150px;">
+                                            <p>Текстът към снимката ще бъде тук</p>
+                                        </div>
+                                        <div class="right-art">
+                                            <div class="inn-art">
+                                                <img src="images/fb.png" alt="#" width="125px" height="75px;">
+                                                <p class="text">Текстът към снимката ще бъде тук</p>
+                                            </div>
+                                            <div class="inn-art">
+                                                <img src="images/f1.jpg" alt="#" width="125px" height="75px;">
+                                                <p class="text">Текстът към снимката ще бъде тук</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!-- /cbp-hrsub-inner -->
+                            </div><!-- /cbp-hrsub -->
+                        </li>
+                        <li>
+                            <a href="#">Коментар</a>
+                            <div class="cbp-hrsub">
+                                <div class="cbp-hrsub-inner"> 
+                                    <div class="drop-menu">
+                                    </div>
+                                    <div class="drop-down-under">
+                                        <div class="left-art">
+                                            <img src="images/kitchen_adventurer_caramel.jpg" alt="#" width="250px" height="150px;">
+                                            <p>Текстът към снимката ще бъде тук</p>
+                                        </div>
+                                        <div class="right-art">
+                                            <div class="inn-art">
+                                                <img src="images/kitchen_adventurer_caramel.jpg" alt="#" width="125px" height="75px;">
+                                                <p class="text">Текстът към снимката ще бъде тук</p>
+                                            </div>
+                                            <div class="inn-art">
+                                                <img src="images/kitchen_adventurer_caramel.jpg" alt="#" width="125px" height="75px;">
+                                                <p class="text">Текстът към снимката ще бъде тук</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!-- /cbp-hrsub-inner -->
+                            </div><!-- /cbp-hrsub -->
+                        </li>
+                        <li>
+                        <li>
+                            <a href="sport.html">Спорт</a>
+                            <div class="cbp-hrsub">
+                                <div class="cbp-hrsub-inner"> 
+                                    <div class="drop-menu">
+                                        <ul>
+                                            <li><a href="#">Футбол</a></li>
+                                            <li><a href="#">Формула 1</a></li>
+                                            <li><a href="#">Волейбол</a></li>
+                                            <li><a href="#">Баскетбол</a></li>
+                                            <li><a href="#">MMA</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="drop-down-under">
+                                        <div class="left-art">
+                                            <img src="images/f1.jpg" alt="#" width="250px" height="150px;">
+                                            <p>Текстът към снимката ще бъде тук</p>
+                                        </div>
+                                        <div class="right-art">
+                                            <div class="inn-art">
+                                                <img src="images/f1.jpg" alt="#" width="125px" height="75px;">
+                                                <p class="text">Текстът към снимката ще бъде тук</p>
+                                            </div>
+                                            <div class="inn-art">
+                                                <img src="images/f1.jpg" alt="#" width="125px" height="75px;">
+                                                <p class="text">Текстът към снимката ще бъде тук</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!-- /cbp-hrsub-inner -->
+                            </div><!-- /cbp-hrsub -->
+                        </li>
+                        <li>
+                        <li>
+                            <a href="#">Моята новина</a>
+                            <div class="cbp-hrsub">
+                                <div class="cbp-hrsub-inner"> 
+                                    <div class="drop-menu">
+                                    </div>
+                                    <div class="drop-down-under">
+                                        <div class="left-art">
+                                            <img src="images/kitchen_adventurer_caramel.jpg" alt="#" width="250px" height="150px;">
+                                            <p>Текстът към снимката ще бъде тук</p>
+                                        </div>
+                                        <div class="right-art">
+                                            <div class="inn-art">
+                                                <img src="images/kitchen_adventurer_caramel.jpg" alt="#" width="125px" height="75px;">
+                                                <p class="text">Текстът към снимката ще бъде тук</p>
+                                            </div>
+                                            <div class="inn-art">
+                                                <img src="images/kitchen_adventurer_caramel.jpg" alt="#" width="125px" height="75px;">
+                                                <p class="text">Текстът към снимката ще бъде тук</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!-- /cbp-hrsub-inner -->
+                            </div><!-- /cbp-hrsub -->
+                        </li>
+                        <li>
+                            <a href="#">Лайфстайл</a>
+                            <div class="cbp-hrsub">
+                                <div class="cbp-hrsub-inner"> 
+                                    <div class="drop-menu">
+                                        <ul>
+                                            <li><a href="#">АРТ</a></li>
+                                            <li><a href="#">Любопитно</a></li>
+                                            <li><a href="#">Музика</a></li>
+                                            <li><a href="#">Култура</a></li>
+                                            <li><a href="#">Технологии и наука</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="drop-down-under">
+                                        <div class="left-art">
+                                            <img src="images/an.jpg" alt="#" width="250px" height="150px;">
+                                            <p>Текстът към снимката ще бъде тук</p>
+                                        </div>
+                                        <div class="right-art">
+                                            <div class="inn-art">
+                                                <img src="images/kino.jpg" alt="#" width="125px" height="75px;">
+                                                <p class="text">Текстът към снимката ще бъде тук</p>
+                                            </div>
+                                            <div class="inn-art">
+                                                <img src="images/teat.jpg" alt="#" width="125px" height="75px;">
+                                                <p class="text">Текстът към снимката ще бъде тук</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!-- /cbp-hrsub-inner -->
+                            </div><!-- /cbp-hrsub -->
+                        </li>
+                        <li>
+                            <a href="#">Камерите</a>
+                            <div class="cbp-hrsub">
+                                <div class="cbp-hrsub-inner"> 
+                                    <div class="drop-menu">
+                                    </div>
+                                    <div class="drop-down-under">
+                                        <div class="left-art">
+                                            <img src="images/kitchen_adventurer_caramel.jpg" alt="#" width="250px" height="150px;">
+                                            <p>Текстът към снимката ще бъде тук</p>
+                                        </div>
+                                        <div class="right-art">
+                                            <div class="inn-art">
+                                                <img src="images/kitchen_adventurer_caramel.jpg" alt="#" width="125px" height="75px;">
+                                                <p class="text">Текстът към снимката ще бъде тук</p>
+                                            </div>
+                                            <div class="inn-art">
+                                                <img src="images/kitchen_adventurer_caramel.jpg" alt="#" width="125px" height="75px;">
+                                                <p class="text">Текстът към снимката ще бъде тук</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!-- /cbp-hrsub-inner -->
+                            </div><!-- /cbp-hrsub -->
+                        </li>
+                         <li>
+                            <a href="#">Галерия</a>
+                            <div class="cbp-hrsub">
+                                <div class="cbp-hrsub-inner"> 
+                                    <div class="drop-menu">
+                                        <ul>
+                                            <li><a href="#">Рецепти</a></li>
+                                            <li><a href="#">Мода</a></li>
+                                            <li><a href="#">Шопинг</a></li>
+                                            <li><a href="#">Семейство</a></li>
+                                            <li><a href="#">Време за теб</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="drop-down-under">
+                                        <div class="left-art">
+                                            <img src="images/kitchen_adventurer_caramel.jpg" alt="#" width="250px" height="150px;">
+                                            <p>Текстът към снимката ще бъде тук</p>
+                                        </div>
+                                        <div class="right-art">
+                                            <div class="inn-art">
+                                                <img src="images/kitchen_adventurer_caramel.jpg" alt="#" width="125px" height="75px;">
+                                                <p class="text">Текстът към снимката ще бъде тук</p>
+                                            </div>
+                                            <div class="inn-art">
+                                                <img src="images/kitchen_adventurer_caramel.jpg" alt="#" width="125px" height="75px;">
+                                                <p class="text">Текстът към снимката ще бъде тук</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!-- /cbp-hrsub-inner -->
+                            </div><!-- /cbp-hrsub -->
+                        </li>
+                        <li>
+                            <a href="#">Емисии</a>
+                            <div class="cbp-hrsub">
+                                <div class="cbp-hrsub-inner"> 
+                                    <div class="drop-menu">
+                                    </div>
+                                    <div class="drop-down-under">
+                                        <div class="left-art">
+                                            <img src="images/kitchen_adventurer_caramel.jpg" alt="#" width="250px" height="150px;">
+                                            <p>Текстът към снимката ще бъде тук</p>
+                                        </div>
+                                        <div class="right-art">
+                                            <div class="inn-art">
+                                                <img src="images/kitchen_adventurer_caramel.jpg" alt="#" width="125px" height="75px;">
+                                                <p class="text">Текстът към снимката ще бъде тук</p>
+                                            </div>
+                                            <div class="inn-art">
+                                                <img src="images/kitchen_adventurer_caramel.jpg" alt="#" width="125px" height="75px;">
+                                                <p class="text">Текстът към снимката ще бъде тук</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!-- /cbp-hrsub-inner -->
+                            </div><!-- /cbp-hrsub -->
+                        </li>
+                        <li>
+                            <a href="#">Най-четени</a>
+                            <div class="cbp-hrsub">
+                                <div class="cbp-hrsub-inner"> 
+                                    <div class="drop-menu">
+                                    </div>
+                                    <div class="drop-down-under">
+                                        <div class="left-art">
+                                            <img src="images/kitchen_adventurer_caramel.jpg" alt="#" width="250px" height="150px;">
+                                            <p>Текстът към снимката ще бъде тук</p>
+                                        </div>
+                                        <div class="right-art">
+                                            <div class="inn-art">
+                                                <img src="images/kitchen_adventurer_caramel.jpg" alt="#" width="125px" height="75px;">
+                                                <p class="text">Текстът към снимката ще бъде тук</p>
+                                            </div>
+                                            <div class="inn-art">
+                                                <img src="images/kitchen_adventurer_caramel.jpg" alt="#" width="125px" height="75px;">
+                                                <p class="text">Текстът към снимката ще бъде тук</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!-- /cbp-hrsub-inner -->
+                            </div><!-- /cbp-hrsub -->
+                        </li>
+                        <li>
+                            <a href="#">Евро 2016</a>
+                            <div class="cbp-hrsub">
+                                <div class="cbp-hrsub-inner"> 
+                                    <div class="drop-menu">
+                                        <ul>
+                                            <li><a href="#">Рецепти</a></li>
+                                            <li><a href="#">Мода</a></li>
+                                            <li><a href="#">Шопинг</a></li>
+                                            <li><a href="#">Семейство</a></li>
+                                            <li><a href="#">Време за теб</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="drop-down-under">
+                                        <div class="left-art">
+                                            <img src="images/kitchen_adventurer_caramel.jpg" alt="#" width="250px" height="150px;">
+                                            <p>Текстът към снимката ще бъде тук</p>
+                                        </div>
+                                        <div class="right-art">
+                                            <div class="inn-art">
+                                                <img src="images/kitchen_adventurer_caramel.jpg" alt="#" width="125px" height="75px;">
+                                                <p class="text">Текстът към снимката ще бъде тук</p>
+                                            </div>
+                                            <div class="inn-art">
+                                                <img src="images/kitchen_adventurer_caramel.jpg" alt="#" width="125px" height="75px;">
+                                                <p class="text">Текстът към снимката ще бъде тук</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!-- /cbp-hrsub-inner -->
+                            </div><!-- /cbp-hrsub -->
+                        </li>
+                        </ul>
+                    </nav>
+                </div>
+                </div>
 		<div class="cleaner_h0"></div>
 	</div>
 
@@ -457,16 +774,23 @@ $("#"+content_show).slideDown();
 </div>
 <footer>
 	<div id="footer-menu">
-	<div id="center-footer-menu"><a href="#">Контакти </a>| <a href="https://www.facebook.com/plovdivnews/">Facebook</a> | <a href="#">Twitter</a> <a href="#">Коментар</a> | <a href="#">Google Plus</a></div>
+	<div id="center-footer-menu"><a href="#">Контакти </a>| <a href="#">Facebook</a> | <a href="#">Twitter</a> <a href="#">Коментар</a> | <a href="#">Aasdhjdak</a></div>
 	</div>
 
 	<div id="footer">
 	<div id="center-footer">
 	Copyright © 2016 IMG Academy Plovdiv.<br />
-	Powered by : <a href="https://www.facebook.com/petia.stoianova.587">Петя Иванова</a> | <a href="https://www.facebook.com/elena.mumdzhieva">Ели Мумджиева </a> | <a href="https://www.facebook.com/Svetoslav.Slavov.bg">Светослав Славов</a> | <a href="https://www.facebook.com/ivan.timov">Иван Тимов</a>
+	Uchastnici,...,........,...... Tel.-62 333 420600. Fax.-62 333 414890<br />
+	You come here with the IP Address 180.247.235.203<br />
 	</div>
 	</div>
 	<a href="#" class="scrollToTop"></a>
 </footer>
+<script src="js/cbpHorizontalMenu.min.js"></script>
+ <script>
+        $(function() {
+            cbpHorizontalMenu.init();
+                    });
+    </script>
 </body>
 </html>
