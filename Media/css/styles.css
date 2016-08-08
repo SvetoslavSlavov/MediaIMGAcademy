@@ -830,11 +830,27 @@ margin:0px auto;
 	}
 
 	#category{
-		width: 95%;
+		width: 100%;
 	}
 
 	#other{
-		width: 92%;
+		width: 100%;
+	}
+
+	#ladies-top-articles{
+		margin-left: 0px;
+	}
+
+	#ladies-select-recepy{
+		margin-left: 0px;
+	}
+
+	#ladies-select-book{
+		margin-left: 0px;
+	}
+
+	#quote{
+		margin-left: 0px;
 	}
 	
 }
@@ -865,7 +881,6 @@ margin:0px auto;
 
 	#category{
 		width: 100%;
-    	margin-left: -10px;
 	}
 
 	.category-head h2{
@@ -916,7 +931,22 @@ margin:0px auto;
 
 	#other{
 		width: 100%;
-    	margin-left: -15px;
+	}
+
+	#ladies-top-articles{
+		margin-left: 0px;
+	}
+
+	#ladies-select-recepy{
+		margin-left: 0px;
+	}
+
+	#ladies-select-book{
+		margin-left: 0px;
+	}
+
+	#quote{
+		margin-left: 0px;
 	}
 
 	#ladies-select-recepy-box a p{
@@ -927,7 +957,6 @@ margin:0px auto;
 		font-size: 15px;
 	}
 }
-
 
 @media screen and (max-width: 1035px){
 	body{
