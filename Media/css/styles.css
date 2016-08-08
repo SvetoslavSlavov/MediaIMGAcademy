@@ -615,9 +615,6 @@ margin:0px auto;
 }
 
 @media(max-width: 1300px){
-	body{
-		background: red;
-	}
 
 	#ladies-top-news{
 		min-height: 590px;
@@ -677,9 +674,6 @@ margin:0px auto;
 
 
 @media(max-width: 960px){
-	body{
-		background: green;
-	}
 
 	#line-top{
 		display: none;
@@ -788,9 +782,6 @@ margin:0px auto;
 
 
 @media(max-width: 780px){
-	body{
-		background: blue;
-	}
 
 	#ladies-top-menu ul li{
 		padding: 8px 5px 8px 5px;
@@ -854,9 +845,6 @@ margin:0px auto;
 }
 
 @media(max-width: 480px){
-	body{
-		background: yellow;
-	}
 
 	#ladies-top-menu ul li{
 		display: block;
