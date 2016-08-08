@@ -1250,6 +1250,7 @@ margin:0px auto;
 	}
 	.category{
 		background: none;
+		margin-left: 0;
 	}
 	#ladies-select-recepy{
 		border-radius: 0px;

@@ -1,0 +1,25 @@
+From 2cc6ba190be817f46f36c1a05531a4cb48583069 Mon Sep 17 00:00:00 2001
+From: Svetoslav Slavov <Svetoslav Slavov>
+Date: Tue, 26 Jul 2016 03:36:58 +0300
+Subject: [PATCH] no message
+
+---
+ CSS/style.css | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/CSS/style.css b/CSS/style.css
+index 7e4f42f..a9cfe20 100644
+--- a/CSS/style.css
++++ b/CSS/style.css
+@@ -133,7 +133,7 @@ img{
+ }
+ .widget{
+ 	padding-left: 20px;
+-	padding-bottom: 35px;
++	padding-bottom: 0!important;
+ }
+ .controlgroup h3{
+ 	float: left;
+-- 
+2.8.1.windows.1
+

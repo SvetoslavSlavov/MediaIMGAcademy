@@ -1,0 +1,68 @@
+a {
+	text-decoration: none;
+	color: #0a88aa;
+}
+.articalls{
+	background: #fff;
+}
+.posts{
+	padding: 10px;
+}
+.all-art{
+	float: left;
+	width: 100%;
+	padding: 15px;
+}
+.post-num{
+	float: left;
+	width: 46%;
+	margin: 10px;
+}
+.post-num img{
+	width: 100%;
+}
+.published {
+	float: right;
+	font-style: italic;
+	color: #ccc; 
+}
+.post-title a{
+	color: #0a88aa;
+}
+.post-title{
+	text-align: center;
+	padding-top: 10px;
+}
+.page-slider nav{
+	margin-left: 30px;
+}
+@media screen and (max-width: 1024px){
+.nav-hide{
+		float: none;
+		display: none;
+		/*display: block;*/
+		text-align: center;
+	}
+}
+@media screen and (max-width: 480px) {
+	.post-num {
+	    float: left;
+	    width: 95%;
+  }
+  .scrollToTop{
+  	display: none;
+  }
+  .img-add-center{
+  	display: none;
+  }
+  .cbp-hrmenu .cbp-hrsub-inner > div {
+		width: 100%;
+		float: none;
+		padding: 0 2em;
+	}
+	.all-art{
+		padding: 0px;
+	}
+	.scrollToTop{
+		display: none;
+}
