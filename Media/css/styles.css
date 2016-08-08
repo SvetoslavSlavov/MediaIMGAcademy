@@ -771,11 +771,11 @@ margin:0px auto;
 	}
 
 	#clock{
-		visibility: hidden;
+		display: none;
 	}
 
 	#quote{
-		visibility: hidden;
+		display: none;
 	}
 
 }
@@ -1200,10 +1200,75 @@ margin:0px auto;
 		display: none;
 	}
 }
-@media screen and (max-width: 862px){
+/*@media screen and (max-width: 862px){
 	#center-menu{
 		margin-top:27px;
 
+}*/
+@media screen and (max-width: 480px){
+	#wrapper{
+		width: auto;
+		min-height: 0px;
+		/*margin-top: 40px;*/
+		margin-top: none;
+
+	}
+	#ladies-top-menu{
+		display: none;
+	}
+	#ladies-top-news{
+		min-height: none;
+	}
+	#ladies-select-recepy{
+		float: none;
+		margin-left: 0;
+	}
+	#ladies-select-book{
+		float: none;
+		margin: 0;
+	}
+	#ladies-select-book-box {
+		margin-top: 0;
+	}
+	#ladies-select-book-box img{
+		float: none;
+		width: 0;
+		min-height: 0;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+	#ladies-select-book{
+		display: none;
+	}
+	#other{
+		float: none;
+	}
+	#category{
+		background: none;
+		margin-left: 0;
+		background: #FFFFFF;
+	}
+	.category{
+		background: none;
+	}
+	#ladies-select-recepy{
+		border-radius: 0px;
+	}
+	#ladies-select-recepy-box{
+		margin-bottom: 0px;
+		margin-top: 0px;
+	}
+	#ladies-select-recepy-box img{
+		height: initial;
+		margin-bottom: 0px;
+		padding-bottom: 0px;
+	}
+	#ladies-top-articles{
+		margin: 0px;
+	}
+	#other{
+		margin-left: 0;
+	}
 }
 @media screen and (max-width: 242px){
 	#menu-right-center-header{
