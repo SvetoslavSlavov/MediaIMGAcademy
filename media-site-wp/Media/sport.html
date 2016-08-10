@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Plovdiv News - Sport</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script> 
+<script language="javascript" src="js/jquery.ticker.js"></script>
+<script language="javascript" src="js/site.js"></script>
+<script src="js/s3Slider.js" type="text/javascript"></script>
+<link href="css/sport.css" rel="stylesheet" type="text/css" />
+<link href="css/button.top.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body onLoad="goforit()">
+<header>
+	<div id="line-top">
+	<div id="center-line-top">
+	<div style="padding:5px;">
+
+	<div style="float:left; width:145px;">
+	<strong>Последни : </strong>
+	</div>
+
+	<div id="hot-news">
+		<ul id="js-news" class="js-hidden">
+			<li> Изнася ви България оръжия за Сирия</li>
+			<li>Бойко Борисов поискал помощ от Ангела Меркел за охраната на границата</li>
+			<li>Защитата: Обвинението за тероризъм срещу тримата сирийци е плод на натиск</li>
+			<li>Безкомпромисен Григор Димитров се класира за четвъртфинал в Торонто</li>
+		</ul>
+	</div>
+
+	</div>
+	</div>
+	</div>
+
+	<div class="cleaner_h30"></div>
+	<div id="line-header">
+	<div id="center-header">
+	<div id="left-center-header">
+		<img id="logo"src="images/sport-page/sport-logo.png" />
+	</div>
+	<div id="right-center-header">
+		<div id="menu-right-center-header">
+		<a href="#">Контакти</a> | <a href="https://www.facebook.com/plovdivnews/">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Google Plus</a> 
+		</div>
+		<div id="w2b-searchbox">
+		<form id="w2b-searchform" action="pencarian" method="POST">
+		<input type="text" id="s" name="key" value="Search..." onfocus='if (this.value == "Search...") {this.value = ""}' onblur='if (this.value == "") {this.value = "Search...";}'/>
+		<input type="image" src="images/blank.gif" id="sbutton" />
+		</form>
+		</div>
+		<div class="cleaner_h0"></div>
+		<div id="date-right-center-header">
+		Добре дошли посетители | <script src="js/clock.js" type="text/javascript"></script><span id="clock"></span>
+		</div>
+	</div>
+	</div>
+	<div id="line-menu">
+		<div id="center-menu">
+		<ul>
+			<li class="hamburger"onclick="myFunction();"><a href="#">☰ Меню</a></li>
+		</ul>
+		<ul id="nav"class="nav-hide">
+			
+			<li><a href="index.html">Plovdiv News</a></li>
+			<li><a href="#">България</a></li>
+			<li><a href="#">Светът</a></li>
+			<li><a href="#">Коментар</a></li>
+			<li><a href="#">Лайфстайл</a></li>
+			<li><a href="sport.html">Спорт</a></li>
+			<li><a href="#">Моята Новина</a></li>
+			<li><a href="#">Камерите</a></li>
+			<li><a href="#">Галирия</a></li>
+			<li><a href="#">Емисии</a></li>
+			<li><a href="#">Най-четени</a></li>
+			<li><a href="#">Евро 2016</a></li>
+			
+			<!--<li class="icon">
+			    <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
+			</li>-->
+		</ul>
+		<div class="cleaner_h0"></div>
+	</div>
+
+</header>
+<script>
+	function myFunction(){
+		var x = document.getElementById("nav");
+		if (x.className === "nav-hide") {
+        x.className = "nav-show";
+        //document.getElementById("center-content").style.marginTop = "200px";
+	    } else {
+	        x.className = "nav-hide";
+	        //document.getElementById("center-content").style.marginTop = "547px";//
+	        	
+	    }
+	}
+</script>
+		<!-- hamburger 
+			<button class="hamburger">&#9776;</button>
+  			<button class="cross">&#735;</button>
+			<div class="menu">
+				<li><a href="index.html">Plovdiv News</a></li>
+				<li><a href="#">България</a></li>
+				<li><a href="#">Светът</a></li>
+				<li><a href="#">Коментар</a></li>
+				<li><a href="#">Лайфстайл</a></li>
+				<li><a href="#">Спорт</a></li>
+				<li><a href="#">Моята Новина</a></li>
+				<li><a href="#">Камерите</a></li>
+				<li><a href="#">Галирия</a></li>
+				<li><a href="#">Емисии</a></li>
+				<li><a href="#">Най-четени</a></li>
+				<li><a href="#">Евро 2016</a></li>
+			</div> -->
+
+	</div>
+	
+</header>
+<br>
+<br>
+<br>
+<div id="wrapper">
+		<div class="news-box">
+			<article class="post">
+				<div class="post-box">
+					<div class="img">
+						<img src="images/sport-page/rio.jpg">
+						<p class="description">В настоящия момент съставът на олимпийския отбор на Русия наброява 266 състезатели в 29 вид...</p>
+					</div>
+					<h2>
+						<a href="#">266 руснаци имат право да се състезават в Рио</a>
+					</h2>
+					<div class="post-text">
+						<p>
+							30 юли 2016 | 11:35
+						</p>
+					</div>
+				</div>
+			</article>
+			<article class="post">
+				<div class="post-box">
+					<div class="img">
+						<img src="images/sport-page/latino.jpg">
+						<p class="description">Ботев и Локо завършиха 1:1 в дербито на Пловдив, което бе от първия кръг на новосформираната първа професио</p>
+					</div>
+					<h2>
+						<a href="#">Латино атмосфера и гол от засада</a>
+					</h2>
+					<div class="post-text">
+						<p>
+							30 юли 2016 | 14:12
+						</p>
+					</div>
+				</div>
+			</article>
+		</div>
+		<div id="down">
+			<div class="small-news-box">
+				<article class="top-img">
+					<a href="#"><img src="images/sport-page/stoichkov.jpg"></a>
+					<a href="#"><img src="images/sport-page/liteks.jpg"></a>
+					<a href="#"><img src="images/sport-page/agrupa.jpg"></a>
+					<a href="#"><img src="images/sport-page/nacional.jpg"></a>
+				</article>
+				<div class="clear"></div>
+				<article class="down-img">
+					<a href="#"><img src="images/sport-page/downhill.jpg"></a>
+					<div class="down-img-info"><p>Downhill<p></div>
+				</article>
+			</div>
+			<div class="right-news-box">
+				<article class="top-img-right img">
+					<a href="#"><img src="images/sport-page/f1.jpg"></a>
+										<p class="description">Розберг пребори Хамилтън и стартира от полпозишън в домашната ГП на Германия</p>
+					<div class="right-img-info"><p>Формула 1<p></div>
+				</article>
+			</div>
+		</div>
+		<div class="news-box-block">
+			<article>
+				<a href="#"><img src="images/sport-page/motogp.jpg">
+				<h5>Последни новини от Moto-GP</h5></a>
+			</article>
+			<article>
+				<a href="#"><img src="images/sport-page/rally.jpg">
+				<h5>Крис Мийк поведе в рали Финландия</h5></a>
+			</article>
+		</div>
+		<div class="news-box-block">
+			<article>
+				<a href="#"><img src="images/sport-page/valentino.jpg">
+				<h5>Легендата Валентино Роси подписа нов договор с Ямаха</h5></a>
+			</article>
+			<article>
+				<a href="#"><img src="images/sport-page/suzuka.jpg">
+				<h5>"8 часа на Сузука" пряко в ефира на "Евроспорт"</h5></a>
+			</article>
+		</div>
+		<div id="adds">
+			<img src="images/sport-page/add.png">
+		</div>
+		<div class="news-box-sport">
+			<article class="art-1">
+				<div class="top-img-info"><p>Тенис<p></div>
+				<img src="images/sport-page/tenis.jpg">
+				<a href="#">Джокович се класира за полуфиналите в Торонто </a>
+				<a href="#">19-годишна тенисистка въздиша по Надал </a>
+				<a href="#">След три седмици в болница лечението на...</a>
+			</article class="art-1">
+			<article>
+				<div class="top-img-info"><p>Волейбол<p></div>
+				<img src="images/sport-page/volleyball.jpg">
+				<a href="#">България на крачка от класиране на Световното </a>
+				<a href="#">България с трета поредна загуба на световн... </a>
+				<a href="#">Капитанът Велизар Чернокожев: Полша е мног... </a>
+			</article>
+			<article class="art-2">
+				<div class="top-img-info"><p>Голф<p></div>
+				<img src="images/sport-page/golf.jpg">
+				<a href="#">Една ера е към своя край </a>
+				<a href="#">Шампионите от Masters и The Open ще играят на ... </a>
+				<a href="#">"Пирин Голф и Кънтри Клуб" бе арена на семеен турнир </a>
+			</article>
+		</div>			
+		<div class="news-box-sport">
+			<article class="art-2">
+				<div class="top-img-info"><p>MMA<p></div>
+				<img src="images/sport-page/mma.jpg">
+				<a href="#">Бившият световен шампион във версия Световна... </a>
+				<a href="#">Теди Ринер от Франция вярва, че конкуренци...  </a>
+				<a href="#">Според треньорът по бокс Ricky Funez, Na... </a>
+			</article>
+			<article class="art-3">
+				<div class="top-img-info"><p>Хокей<p></div>
+				<img src="images/sport-page/hockey.jpg">
+				<a href="#">БЕЛАРУС: Купа на Беларус</a>
+				<a href="#">СВЯТ: Приятелски клубни срещи</a>
+				<a href="#">СВЯТ: Приятелски международни срещи</a>
+			</article>
+			<article class="art-3"> 
+				<div class="top-img-info"><p>Баскетбол<p></div>
+				<img src="images/sport-page/basketball.jpg">
+				<a href="#">Щатите доминират, удържаха съперник до ...</a>
+				<a href="#">България с първа загуба на Европейскот ... </a>
+				<a href="#">Ще играем за 15-ото място на европейск ...</a>
+			</article>
+		</div>
+		<article id="big-news-down">
+		<div id="big-news-down-info">Ясен Петров след уникалното изпращане в Китай: Настръхват ми косите, когато се сетя за сълзите и тъгата на хората</div>
+			<img src="images/sport-page/mino.jpg">
+		</article>
+		<div id="most-read">
+				<h5>Най-четените новини</h5>
+				<div class="most-read-news">
+					<img src="images/sport-page/1-1.jpg">
+					<span>Сашо Тонев титуляр срещу Атлетико</span>
+				</div>
+				<div class="clear"></div>
+				<div class="most-read-news">
+					<img src="images/sport-page/1-2.jpg">
+					<span>Френски гимнастик с чудовищна контузия</span>
+				</div>
+				<div class="clear"></div>
+				<div class="most-read-news">
+					<img src="images/sport-page/1-3.jpg">
+					<span>Фен на Лудогорец атакува Костов - треньорът на Ботев му отвръща</span>
+				</div>
+				<div class="clear"></div>
+				<div class="most-read-news">
+					<img src="images/sport-page/1-4.jpg">
+					<span>Унгарка със злато на шпага от Рио 2016</span>
+				</div>
+				<div class="clear"></div>
+				<div class="most-read-news">
+					<img src="images/sport-page/1-5.jpg">
+					<span>Джудист носи първо злато на Русия в Рио</span>
+				</div>
+				<div class="clear"></div>
+				<div class="most-read-news">
+					<img src="images/sport-page/1-6.jpg">
+					<span>Поставиха Ивет сред най-красивите в Рио</span>
+				</div>
+				<div class="clear"></div>
+				<div class="most-read-news">
+					<img src="images/sport-page/1-7.jpg">
+					<span>Не футболен агент, а бясна кучка</span>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div id="big-down-widget">
+				<img src="images/sport-page/sinoptik.png">
+			</div>
+			<div id="video">				
+				<iframe width="486" height="315" src="https://www.youtube.com/embed/xSNE0FOW5mg" frameborder="0" allowfullscreen></iframe>
+			</div>
+			
+		
+</div>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script>
+<script>
+	$(".img").mouseover(function() {
+    $(this).children(".description").show();
+}).mouseout(function() {
+    $(this).children(".description").hide();
+});
+
+$( ".cross" ).hide();
+$( ".menu" ).hide();
+$( ".hamburger" ).click(function() {
+$( ".menu" ).slideToggle( "slow", function() {
+$( ".hamburger" ).hide();
+$( ".cross" ).show();
+});
+});
+
+$( ".cross" ).click(function() {
+$( ".menu" ).slideToggle( "slow", function() {
+$( ".cross" ).hide();
+$( ".hamburger" ).show();
+});
+});
+
+
+</script>
+<script type="text/javascript" src="js/button.top.js"></script>
+<footer>
+	<div id="footer-menu">
+	<div id="center-footer-menu"><a href="#">Контакти </a>| <a href="https://www.facebook.com/plovdivnews/">Facebook</a> | <a href="#">Twitter</a> <a href="#">Коментар</a> | <a href="#">Google Plus</a></div>
+	</div>
+
+	<div id="footer">
+	<div id="center-footer">
+	Copyright © 2016 IMG Academy Plovdiv.<br />
+	Powered by : <a href="https://www.facebook.com/petia.stoianova.587">Петя Иванова</a> | <a href="https://www.facebook.com/elena.mumdzhieva">Ели Мумджиева </a> | <a href="https://www.facebook.com/Svetoslav.Slavov.bg">Светослав Славов</a> | <a href="https://www.facebook.com/ivan.timov">Иван Тимов</a>
+	</div>
+	</div>
+	<a href="#" class="scrollToTop"></a>
+</footer>
